@@ -1,0 +1,16 @@
+{
+  "name": "pointed-ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chloehwang/pointed-ecommerce.git",
+  "author": "Chloe Hwang <c.chloeh@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run blendid",
+    "build": "yarn run blendid -- build"
+  },
+  "dependencies": {
+    "blendid": "^4.1.1",
+    "npm-check-updates": "^2.12.1"
+  }
+}

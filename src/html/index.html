@@ -1,0 +1,14 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+  {% include './shared/explorations-nav.html' %}
+
+  <h1 data-module="example">{{ hello }}</h1>
+{% endblock %}
