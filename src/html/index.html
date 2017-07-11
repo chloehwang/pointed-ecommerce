@@ -10,5 +10,149 @@
 
   {% include './shared/explorations-nav.html' %}
 
-  <h1 data-module="example">{{ hello }}</h1>
+  {# header #}
+  <header class="hero">
+    <div class="hero__card">
+      <h1>
+        <span>Improving the way we</span>
+        <span>Shop Online</span>
+      </h1>
+      <aside>
+        <p>What’s missing from the online shopping experience? Most of the actual experience, it turns out. Ecommerce is still focused on buying rather than shopping. We’re exploring ways to bridge the gap between physical and digital.</p>
+      </aside>
+    </div>
+  </header>
+
+  {# intro #}
+  <section class="intro">
+    <div class="wrapper">
+      <p>Women make up the overwhelming majority of retail consumers. However, e-commerce sites are designed and built in a tech industry dominated by men. That underlying tension is becoming more apparent and problematic as more and more people shop online. E-commerce sites have largely ignored the preferences of potentially its largest audience-- women.</p>
+      <p>We decided to talk with women and observe their behaviors in physical stores to uncover what is missing in the current online shopping experience.</p>
+      <p>One thing we heard over and over again was... paragraph about what women were actually complaining about. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Some sort of overall summary of the feedback.</p>
+    </div>
+    <div class="comparison-box">
+      <blockquote>
+        <h3>Shopping in a store</h3>
+        <p>"I just like to shop. I like the event of shopping. I'm like a kid in a candy store."</p>
+      </blockquote>
+      <blockquote>
+        <h3>Shopping online</h3>
+        <p>I get really frustrated online. I get tired of looking. I get tired of clicking through page after page.”</p>
+      </blockquote>
+    </div>
+  </section>
+
+  {# problem 1 #}
+  <section class="problem1">
+    <div class="wrapper">
+      <h2>Problem #1:</h2>
+      <h3>Human habits are ignored</h3>
+      <p>Most e-commerce sites follow same general structure and employ the same navigation and interaction patterns. Products are found through searches or browsed by category. In this structure, there is an underlying assumption that users flow naturally in a linear way from an index page to a product details page to a cart to the checkout.</p>
+      <p>These patterns are great for targeted searches, but they don't accommodate many other common shopping behaviors. In fact, this process starts to feel more like running queries on a database than like shopping.  </p>
+      <aside>Most e-commerce sites are optimized for a utilitarian march toward purchasing.</aside>
+      <p>Current sites feel transactional, stemming from a focus on stakeholder desires. This model largely ignores how customers might envision the experience.</p>
+      <p>We decided to investigate ways to design a more dynamic and engaging online shopping experience. Below are some ideas for bringing the more social and exploratory aspects of shopping to the online space.</p>
+
+      <h4>Store design:</h4>
+      <ul>
+        <li>Presents full ensembles</li>
+        <li>Has visual hierarchy and priority</li>
+        <li>Makes multiple product categories visible</li>
+        <li>Utilizes 3 axes</li>
+      </ul>
+
+      <h4>E-commerce design:</h4>
+      <ul>
+        <li>Focuses on individual items</li>
+        <li>Sticks to a grid layout</li>
+        <li>Has siloed product categories</li>
+        <li>Utilizes only 1 axis</li>
+      </ul>
+    </div>
+
+    <div class="bg-pink">
+      <div class="wrapper">
+        <h4>it’s bigger than buying.</h4>
+        <p>Our conversations with women revealed that shopping is far more than a means to acquire things. It can be a fun diversion, a way to express one's personal identity or style, or even a way to build trust with close friends and family. Without exploring how e-commerce sites can deliver on these expectations, we may also be missing out on powerful consumers.</p>
+      </div>
+    </div>
+  </section>
+
+  {# problem 2 #}
+  <section class="problem2">
+    <div class="wrapper">
+      <h2>Problem #2:</h2>
+      <h3>The middle step is missing</h3>
+      <p>Our conversations with women revealed that shopping is far more than a means to acquire things. It can be a fun diversion, a way to express one's personal identity or style, or even a way to build trust with close friends and family. Online shopping experiences largely ignore these use cases. In an effort to tighten the sales funnel, they encourage you to go straight from browse to buy without giving you ways to consider your purchases.</p>
+
+      <div class="items">
+        <figure>
+          <img src="" alt="">
+          <figcaption>Browse</figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="">
+          <figcaption>Consider</figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="">
+          <figcaption>Buy</figcaption>
+        </figure>
+      </div>
+
+      <p>By not delivering on expectations, we’re potentially missing out on a powerful consumer group. With that in mind, we focused on three areas where we could bridge the gap.</p>
+    </div>
+  </section>
+
+  {# solution 1 #}
+  <section class="solution1 bg-gradient">
+    <div class="wrapper">
+      <h2>Comparison Shopping</h2>
+      <h3>The Problem</h3>
+      <p>In physical stores, shoppers frequently shop not for individual items, but for a collection of items: an outfit, a place setting, or even the ingredients for a meal. But online, it’s difficult to browse multiple product categories simultaneously. Browsing is siloed and constrained to predefined categories, making it difficult to compare dissimilar items. Each search is independent.</p>
+      <h3>Why it matters</h3>
+      <p>The advantages of making comparison shopping easier are two-fold: the potential to convert one initial search into a multi-item purchase and preventing the shopping cart workaround. E-retailers use metrics like cart abandonment to gauge the success of their conversion funnel. But, some of the customers I talked to use the shopping cart like a sandbox.</p>
+      <p>They throw in all the items they are even remotely considering, so that they can centralize all that information. This is because viewing all that information while browsing the site is difficult. They may never intend to buy more than 10% or 20% of the items they toss into their digital cart. </p>
+      <p>Current sites feel transactional, which stems from a focus on stakeholder desires. The structure reflects the sales funnel and a functional, utilitarian march towards it. This model lacks the full consideration of how customers might envision the browsing and shopping experience. </p>
+      <hr>
+      <h3>Our approach</h3>
+      <p>When we approached the comparison shopping problem, we thought about aways to keep the shopper in the context of her current search, while also revealing a wide array of complementary products. We wanted to create a space where a customer could consider pairings while staying in the browsing and shopping mindset.</p>
+      <div class="solutions">
+        <div class="solution">
+          <h4>Solution</h4>
+          <h5>Multiple product categories visible at one time </h5>
+          <img src="" alt="">
+          <p>Physical stores excel at showing a variety of categories at once. You might see a display featuring t-shirts, jeans, and sweaters for instance.</p>
+          <p>To replicate this online,  a panel could emerge suggesting you check out how that item pairs with another product category, sliding in a carousel of items. This approach avoids taking the shopper out of context, and down distracting rabbit holes. This also surfaces up a wider variety of items so there’s a greater chance of matching someone’s personal style.</p>
+        </div>
+        <div class="solution">
+          <h4>Solution</h4>
+          <h5>A persistant favorites panel</h5>
+          <img src="" alt="">
+          <p>This allows a customer to take items along with them as they shop, much the way you carry items around as you wander the store. Favorites isn’t a new concept, but creating a visible and persistant favorites panel is.</p>
+          <p>Here, we add a horizontal favorites area. You can  drag and drop items in, and build multiple collections or outfits that you can tab through to review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# conclusion #}
+  <section class="conclusion">
+    <div class="wrapper">
+      <h2>Conclusion</h2>
+      <h3>The key to promoting sales is to give the customer the space and environment to develop an emotional attachment to the products.</h3>
+      <p>Online shopping lacks the fun of real shopping because it’s focused so heavily on getting you to the checkout. Current patterns ignore the way people prefer to shop and treat every product more or less the same. Products are equally competing for the customers attention and the customer isn't guided, making the experience boring and mechanical. By adding features that bridge the gap between analog and digital, we can accommodate common shopping habits.</p>
+    </div>
+  </section>
+
+  {# footer #}
+  <footer>
+    <div class="wrapper">
+      <h2>An exploration by Viget</h2>
+      <p>At Viget, we’re continually thinking about how we can help shape and improve the experiences around us and make the world a better place — whether that’s through the technology solutions we deliver to our clients or through conceptual explorations.</p>
+      <h3>Let's get to work</h3>
+      <button>Contact Us</button>
+    </div>
+  </footer>
+
 {% endblock %}
