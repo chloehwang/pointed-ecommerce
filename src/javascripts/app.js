@@ -1,7 +1,7 @@
 import './modules'
 
 //helper function
-export const selectElements = function(selector) {
+export const selectElements = (selector) => {
   let elements = [].slice.call(document.getElementsByClassName(selector));
   return elements.length === 1 ? elements[0] : elements;
 };
@@ -18,14 +18,16 @@ export default class StickyNav {
     this.activeLink;
     this.sections = selectElements('opportunity').reverse();
 
-    //cache all sections and their associated nav links
-    this.sections.forEach(section => {
+    const cacheDetails = (section) => {
       let id = '#' + section.getAttribute('id');
       let link = this.el.querySelector(`a[href='${id}']`);
       let offsetTop = section.offsetTop;
 
       this.map[id] = {id, link, offsetTop};
-    })
+    }
+
+    //cache all sections and their associated nav links
+    this.sections.forEach(cacheDetails);
   }
 
   bindEvents() {
@@ -39,9 +41,10 @@ export default class StickyNav {
     //loop through cached map
     for (let key in this.map) {
       let section = this.map[key];
+      let isAtTop = windowTop > section.offsetTop;
 
       //if we've scrolled into a new section, turn off the currently active link and set a new active link
-      if (windowTop > section.offsetTop) {
+      if (isAtTop) {
         this.turnOffCurrentlyActive();
         this.activeLink = section.link;
         this.activeLink.classList.add('-active');
