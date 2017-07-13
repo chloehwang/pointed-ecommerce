@@ -1,0 +1,20 @@
+// Variables
+$transition-property : all
+$transition-duration : 0.1s
+$transition-delay    : 0s
+$transition-function : ease
+$ease-in-out-sine    : cubic-bezier(0.445, 0.050, 0.550, 0.950)
+
+// Mixins
+=hidden-transition-content
+  opacity: 0
+  pointer-events: none
+  visibility: hidden
+
+=visible-transition-content
+  opacity: 1
+  pointer-events: auto
+  visibility: visible
+
+=transition($property : $transition-property, $duration : $transition-duration, $function : $transition-function, $delay: $transition-delay)
+  transition: $property $duration $function $delay

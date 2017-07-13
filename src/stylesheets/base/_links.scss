@@ -1,0 +1,10 @@
+a
+  color: color(green, darker)
+  text-decoration: none
+  +transition
+
+[data-whatinput="mouse"] button:focus,
+[data-whatinput="touch"] button:focus,
+[data-whatinput="mouse"] a:focus,
+[data-whatinput="touch"] a:focus
+  outline: none

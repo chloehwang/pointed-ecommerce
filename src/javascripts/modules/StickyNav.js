@@ -24,7 +24,7 @@ export default class StickyNav {
 
   setInViewportHandler (section) {
     let link = this.getNavLink(section);
-    let watcher = inViewport(section, { container: this.el, offset: -1 * this.navHeight }, function() {
+    let watcher = inViewport(section, { container: this.el, offset: -1 * this.navHeight - 5 }, function() {
       this.setActiveSection(link, watcher)
     }.bind(this));
   }

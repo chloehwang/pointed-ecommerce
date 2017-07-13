@@ -1,0 +1,35 @@
+// Variables
+$page-header-height : 64px
+
+// Mixins
+=row
+  +clear-fix
+  float: left
+  position: relative
+  width: 100%
+
+=wrap
+  +clear-fix
+  margin: 0 auto
+  max-width: $grid-max-width
+  padding: 0 20px
+  position: relative
+  width: 100%
+
+  +bp-tablet
+    padding: 0 30px
+
+  +bp-notebook
+    padding: 0 40px
+
+  +bp-desktop
+    padding: 0 60px
+
+=clear-fix
+  &:before,
+  &:after
+    content: ""
+    display: table
+
+  &:after
+    clear: both

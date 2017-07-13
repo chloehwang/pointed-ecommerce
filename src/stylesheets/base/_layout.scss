@@ -1,0 +1,30 @@
+html, body
+  background: #fff
+  max-width: 100%
+  min-height: 100%
+
+body
+  color: color(grey, darker)
+  line-height: $base-line-height
+  margin: 0
+  padding: 0
+
+  &.-active-mobile-menu
+    overflow: hidden
+
+  *
+    box-sizing: border-box
+
+.row
+  +row
+
+.wrap
+  +wrap
+
+  &.-thin
+    max-width: 900px
+
+  &.-max
+    padding: 0
+    max-width: $max-page-width
+

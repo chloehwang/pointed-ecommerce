@@ -1,11 +1,14 @@
 //config
-
+@import "config/colors";
+@import "config/mixins";
 
 //vendor
 
 
 //base
+@import "base/html";
 @import "base/typography";
+@import "base/utilities";
 
 //components
 @import "components/sticky-nav";
