@@ -6,7 +6,7 @@
   "author": "Chloe Hwang <c.chloeh@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn run blendid",
+    "start": "blendid",
     "build": "yarn run blendid -- build"
   },
   "dependencies": {

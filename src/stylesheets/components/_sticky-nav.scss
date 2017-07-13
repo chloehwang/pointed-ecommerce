@@ -1,0 +1,18 @@
+.sticky-nav {
+  background-color: blue;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.opportunity {
+  //padding just for now because clicking on nav links causes section to disappear under nav
+  padding-top: 120px;
+}
+
+.-active {
+  color: pink;
+}
