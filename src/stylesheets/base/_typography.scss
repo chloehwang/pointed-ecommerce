@@ -1,3 +1,65 @@
 body {
-  font-family: sans-serif;
+  @include font-family-lora;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: black;
+}
+
+.text {
+  &.-tiny {
+    font-size: 14px;
+  }
+
+  &.-small {
+    font-size: 16px;
+  }
+
+  &.-large {
+    font-size: 22px;
+  }
+
+  &.-xlarge {
+    font-size: 30px;
+  }
+
+  &.-color-darkCoral {
+    color: color(darkCoral);
+  }
+
+  &.-color-white {
+    color: #fff;
+  }
+
+  &.-narrow-spacing {
+    letter-spacing: .15em;
+  }
+
+  &.-wide-spacing {
+    letter-spacing: .2em;
+  }
+
+  &.-san-serif {
+    @include font-family-geo-book
+  }
+
+  &.-san-serif-light {
+    @include font-family-geo
+  }
+
+}
+
+.caps {
+  text-transform: uppercase
+}
+
+.text-align-center {
+  text-align: center
+}
+
+.text-align-left {
+  text-align: left
+}
+
+.text-align-right {
+  text-align: right
 }

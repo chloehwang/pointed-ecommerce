@@ -1,12 +1,16 @@
 //config
 @import "config/colors";
-@import "config/mixins";
+@import "config/utilities";
+@import "config/typography";
+
 
 //vendor
 
 
 //base
 @import "base/html";
+@import "base/links";
+@import "base/backgrounds";
 @import "base/typography";
 @import "base/utilities";
 
