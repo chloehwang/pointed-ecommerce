@@ -5,61 +5,75 @@ body {
   color: black;
 }
 
-.text {
-  &.-tiny {
-    font-size: 14px;
-  }
-
-  &.-small {
-    font-size: 16px;
-  }
-
-  &.-large {
-    font-size: 22px;
-  }
-
-  &.-xlarge {
-    font-size: 30px;
-  }
-
-  &.-color-darkCoral {
-    color: color(darkCoral);
-  }
-
-  &.-color-white {
-    color: #fff;
-  }
-
-  &.-narrow-spacing {
-    letter-spacing: .15em;
-  }
-
-  &.-wide-spacing {
-    letter-spacing: .2em;
-  }
-
-  &.-san-serif {
-    @include font-family-geo-book
-  }
-
-  &.-san-serif-light {
-    @include font-family-geo
-  }
-
+.-tiny {
+  font-size: 14px;
 }
 
-.caps {
-  text-transform: uppercase
+.-small {
+  font-size: 16px;
+}
+
+.-large {
+  font-size: 22px;
+}
+
+.-xlarge {
+  font-size: 30px;
+}
+
+.-color-darkCoral {
+  color: color(darkCoral);
+}
+
+.-color-white {
+  color: #fff;
+}
+
+.-narrow-spacing {
+  letter-spacing: .15em;
+}
+
+.-wide-spacing {
+  letter-spacing: .2em;
+}
+
+.-san-serif {
+  @include font-family-geo-book;
+}
+
+.-san-serif-light {
+  @include font-family-geo;
+}
+
+.-caps {
+  text-transform: uppercase;
 }
 
 .text-align-center {
-  text-align: center
+  text-align: center;
 }
 
 .text-align-left {
-  text-align: left
+  text-align: left;
 }
 
 .text-align-right {
-  text-align: right
+  text-align: right;
 }
+
+.small-pink-heading,
+.small-black-heading {
+  @include font-family-geo-book;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.small-pink-heading {
+  color: color(darkCoral);
+  font-size: 14px;
+}
+
+.small-black-heading {
+  font-size: 16px;
+}
+
