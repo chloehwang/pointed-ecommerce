@@ -9,6 +9,15 @@ body {
 }
 
 ul {
-  padding-left: 0;
   list-style: inside;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+blockquote {
+  margin: 0;
+}
+
+hr {
+  border-color: color(lightGray)
 }

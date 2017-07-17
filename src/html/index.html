@@ -39,13 +39,19 @@
     </div>
 
     <div class="comparison-box text-align-center wrapper">
-      <h3 class="-san-serif -small -narrow-spacing -caps">Shopping in a store</h3>
-      <blockquote><p class="-xlarge">"I just like to shop. I like the event of shopping. I'm like a kid in a candy store."</p></blockquote>
+      <div class="quote">
+        <h3 class="-san-serif -small -narrow-spacing -caps">Shopping in a store</h3>
+        <blockquote><p class="-xlarge">"I just like to shop. I like the event of shopping. I'm like a kid in a candy store."</p></blockquote>
+      </div>
 
-      <span>v.s.</span>
+      <div class="vs-circle-container">
+        <span class="vs-circle -color-white">v.s.</span>
+      </div>
 
-      <h3 class="-san-serif -small -narrow-spacing -caps">Shopping online</h3>
-      <blockquote><p class="-xlarge">I get really frustrated online. I get tired of looking. I get tired of clicking through page after page.”</p></blockquote>
+      <div class="quote">
+        <h3 class="-san-serif -small -narrow-spacing -caps">Shopping online</h3>
+        <blockquote><p class="-xlarge">I get really frustrated online. I get tired of looking. I get tired of clicking through page after page.”</p></blockquote>
+      </div>
     </div>
   </section>
 
@@ -61,7 +67,7 @@
 
       <p>These patterns are great for targeted searches, but they don't accommodate many other common shopping behaviors. In fact, this process starts to feel more like running queries on a database than like shopping.  </p>
 
-      <blockquote><p>Most e-commerce sites are optimized for a utilitarian march toward purchasing.</p></blockquote>
+      <blockquote><p class="-color-darkCoral -larger"><em>Most e-commerce sites are optimized for a utilitarian march toward purchasing.</em></p></blockquote>
 
       <p>Current sites feel transactional, stemming from a focus on stakeholder desires. This model largely ignores how customers might envision the experience.</p>
 
@@ -123,27 +129,25 @@
 
   {# sticky nav bar #}
   <nav class="sticky-nav bgcolor-black -san-serif -wide-spacing -caps" data-module="StickyNav">
-    <div class="wrapper">
-      <span class="-tiny">E-commerce opportunities:</span>
-      <ol class="-small">
-        <li><a href="#opportunity1" alt="Comparison Shopping">Comparison Shopping</a></li>
-        <li><a href="#opportunity2" alt="Discovery Delight">Discovery Delight</a></li>
-        <li><a href="#opportunity3" alt="Social Validation">Social Validation</a></li>
-      </ol>
-    </div>
+    <span class="-tiny">E-commerce opportunities:</span>
+    <ol class="-small">
+      <li><a href="#opportunity1" alt="Comparison Shopping">Comparison Shopping</a></li>
+      <li><a href="#opportunity2" alt="Discovery Delight">Discovery Delight</a></li>
+      <li><a href="#opportunity3" alt="Social Validation">Social Validation</a></li>
+    </ol>
   </nav>
 
   {# opportunity 1 #}
   <section id="opportunity1" class="bgcolor-lightGray opportunity">
     <div class="wrapper">
-      <h2 class="-san-serif -narrow-spacing -caps">
+      <h2 class="opportunity__heading">
         <span class="screen-reader">Opportunity #1: </span>
         Comparison Shopping
       </h2>
 
       <h3 class="small-black-heading">The Problem</h3>
 
-      <p class="-san-serif-light">In physical stores, shoppers frequently shop not for individual items, but for a collection of items: an outfit, a place setting, or even the ingredients for a meal. But online, it’s difficult to browse multiple product categories simultaneously. Browsing is siloed and constrained to predefined categories, making it difficult to compare dissimilar items. Each search is independent.</p>
+      <p><span class="opportunity__content-leadin">In physical stores, shoppers frequently shop not for individual items, but for a collection of items: an outfit, a place setting, or even the ingredients for a meal. But online, it’s difficult to browse multiple product categories simultaneously. Browsing is siloed and constrained to predefined categories, making it difficult to compare dissimilar items. Each search is independent.</span></p>
 
       <h3 class="small-black-heading">Why it matters</h3>
 
@@ -194,12 +198,12 @@
   {# opportunity 2 #}
   <section id="opportunity2" class="opportunity">
     <div class="wrapper">
-      <h2 class="-san-serif -narrow-spacing -caps">
+      <h2 class="opportunity__heading">
         <span class="screen-reader">Opportunity #2: </span>
         Discovery Delight
       </h2>
 
-      <p class="-san-serif-light">When we interviewed some women about what they enjoy about shopping in a store, they seemed to delight at the thought of finding something unique, a hidden gem, or even an item that they wouldn't have typically considered. The challenge here, then, is to give people that same thrill of discovery in an online setting.</p>
+      <p><span class="opportunity__content-leadin">When we interviewed some women about what they enjoy about shopping in a store, they seemed to delight at the thought of finding something unique, a hidden gem, or even an item that they wouldn't have typically considered. The challenge here, then, is to give people that same thrill of discovery in an online setting.</span></p>
 
       <p>This is difficult to replicate online in the current search structure. There isn't really an authentic way to happen upon something without feeling heavily guided. Vignettes and featured products are curated by editors, and their hand is evident in the selections. It feels more like a suggestion than a discovery. How do you create a feeling of ownership over the exploration?</p>
 
@@ -230,12 +234,12 @@
   {# opportunity 3 #}
   <section id="opportunity3" class="bgcolor-lightGray opportunity">
     <div class="wrapper">
-      <h2 class="-san-serif -narrow-spacing -caps">
+      <h2 class="opportunity__heading">
         <span class="screen-reader">Opportunity #3: </span>
         Social Validation
       </h2>
 
-      <p class="-san-serif-light">Some women we interviewed think of shopping as a social event. They value it as a way to build relationships with their friends and family. They seek out specific and personalized feedback from trusted advisors to guide their decision. While a second opinion is readily available in most store settings, either through a trusted friend that you bring along or the honest advice of a salesperson, it’s cumbersome to do it online.</p>
+      <p><span class="opportunity__content-leadin">Some women we interviewed think of shopping as a social event. They value it as a way to build relationships with their friends and family. They seek out specific and personalized feedback from trusted advisors to guide their decision. While a second opinion is readily available in most store settings, either through a trusted friend that you bring along or the honest advice of a salesperson, it’s cumbersome to do it online.</span></p>
 
       <p>Making social interactions a larger part of online shopping could have a significant effect on conversions. Access to a sounding board is a useful tool for many. These opinions are often the deciding factor in helping someone make a final choice on purchases.</p>
 

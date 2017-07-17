@@ -1,7 +1,8 @@
 .wrapper {
   margin: 0 auto;
-  max-width: 1090px;
-  padding: 30px;
+  max-width: 1200px;
+  padding: 50px 30px;
+  position: relative;
 
   @include breakpoint("large") {
     padding: 100px;
