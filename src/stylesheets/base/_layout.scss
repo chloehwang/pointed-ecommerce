@@ -1,0 +1,13 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 1090px;
+  padding: 30px;
+
+  @include breakpoint("large") {
+    padding: 100px;
+
+    &.-narrow {
+      padding: 100px 200px;
+    }
+  }
+}

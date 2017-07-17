@@ -8,14 +8,6 @@
 }
 
 .bgcolor-black {
+  @include font-smoothing;
   background-color: color(black);
 }
-
-
-// Patterns
-// .bg-pattern
-//   background-image: url('/assets/images/pattern-triangle.png')
-//   background-size: 485px 510px
-
-//   +retina
-//     background-image: url('/assets/images/pattern-triangle@2x.png')

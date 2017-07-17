@@ -64,6 +64,7 @@ body {
 .small-pink-heading,
 .small-black-heading {
   @include font-family-geo-book;
+  display: block;
   letter-spacing: .2em;
   text-transform: uppercase;
 }
