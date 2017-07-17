@@ -1,0 +1,16 @@
+// Variables
+$colors: (
+  //pinks
+  lightPink: #f4dacf,
+  slightlyDarkerPink: #f4d0c0,
+  darkCoral: #d95d45,
+
+  //grays
+  lightGray: #f5f5f5,
+  black: #000
+);
+
+// Functions
+@function color($key) {
+  @return map-get($colors, $key);
+}

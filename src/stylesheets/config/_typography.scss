@@ -1,0 +1,37 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../fonts/geomanist-regular/geomanist-regular-webfont.eot');
+  src: url('../fonts/geomanist-regular/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/geomanist-regular/geomanist-regular-webfont.woff2') format('woff2'), url('../fonts/geomanist-regular/geomanist-regular-webfont.woff') format('woff'), url('../fonts//geomanist-regular/geomanist-regular-webfont.ttf') format('truetype');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Geomanist Book';
+  src: url('../fonts/geomanist-book/Geomanist-Book.otf') format("opentype");
+  font-weight: 400;
+}
+
+
+// Variables
+$base-font-size   : 18px;
+$base-line-height : 32px;
+
+
+// Mixins
+@mixin font-family-lora {
+  font-family: 'Lora', 'Cambria', 'Times New Roman', 'Times', serif;
+}
+
+@mixin font-family-geo {
+  font-family: 'Geomanist', 'Arial', san-serif;
+}
+
+@mixin font-family-geo-book {
+  font-family: 'Geomanist Book', 'Arial', san-serif;
+}
+
+@mixin font-smoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}

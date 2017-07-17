@@ -1,11 +1,17 @@
 .sticky-nav {
-  background-color: blue;
+  @include font-smoothing;
   color: white;
   margin: 0;
+  min-height: 118px;
   padding: 0;
   position: sticky;
   top: 0;
   width: 100%;
+
+  ol {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .opportunity {
