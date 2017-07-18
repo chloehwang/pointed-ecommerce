@@ -6,25 +6,25 @@ body {
 }
 
 .-tiny {
-  font-size: 14px;
+  font-size: $font-size-tiny;
 }
 
 .-small {
-  font-size: 16px;
+  font-size: $font-size-small;
 }
 
 .-large {
-  font-size: 22px;
+  font-size: $font-size-large;
 }
 
 .-larger {
-  font-size: 24px;
+  font-size: $font-size-larger;
   line-height: 1.6;
 }
 
 
 .-xlarge {
-  font-size: 30px;
+  font-size: $font-size-xlarge;
   line-height: 1.5;
 }
 
@@ -37,11 +37,11 @@ body {
 }
 
 .-narrow-spacing {
-  letter-spacing: .15em;
+  letter-spacing: $font-spacing-narrow;
 }
 
 .-wide-spacing {
-  letter-spacing: .2em;
+  letter-spacing: $font-spacing-wide;
 }
 
 .-san-serif {
@@ -72,16 +72,16 @@ body {
 .small-black-heading {
   @include font-family-geo-book;
   display: block;
-  letter-spacing: .2em;
+  letter-spacing: $font-spacing-wide;
   text-transform: uppercase;
 }
 
 .small-pink-heading {
   color: color(darkCoral);
-  font-size: 14px;
+  font-size: $font-size-tiny;
 }
 
 .small-black-heading {
-  font-size: 16px;
+  font-size: $font-size-small;
 }
 

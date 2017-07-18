@@ -1,21 +1,13 @@
-.opportunity {
-  //TODO - use this later
-  // .small-black-heading, .small-pink-heading {
-  //   margin-top: 50px;
-  // }
-}
-
 .opportunity__heading {
   @include font-family-geo-book;
-  font-size: 24px;
-  letter-spacing: .15em;
+  font-size: $font-size-larger;
+  letter-spacing: $font-spacing-narrow;
   position: relative;
   text-transform: uppercase;
 
   &::before {
-    @include pseudo;
+    @include pseudo('1');
     @include font-family-lora;
-    content: '1';
     font-size: 120px;
     font-weight: 400;
     top: -65px;
@@ -37,34 +29,36 @@
 }
 
 
+.opportunity {
+  @include breakpoint('large') {
+    .opportunity__heading {
+      font-size: 42px;
 
-@include breakpoint('large') {
-  .opportunity__heading {
-    font-size: 42px;
-
-    &::before {
-      font-size: 200px;
-    }
-  }
-
-  .opportunity__content-leadin {
-    font-size: 24px;
-    line-height: 2.2;
-  }
-
-  .solution {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: row-reverse;
-
-    .solution__heading, .small-pink-heading {
-      margin-top: 0;
+      &::before {
+        font-size: 200px;
+      }
     }
 
-    .solution__img {
-      height: 100%;
-      margin-right: 5%;
-      width: 50%;
+    .opportunity__content-leadin {
+      font-size: $font-size-larger;
+      line-height: 2.2;
+    }
+
+    .solution {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .solution__heading, .small-pink-heading {
+        margin-top: 0;
+      }
+
+      .solution__img {
+        height: 100%;
+        margin-right: 5%;
+        width: 50%;
+      }
     }
   }
 }
+

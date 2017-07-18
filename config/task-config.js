@@ -1,3 +1,5 @@
+var globImporter = require('node-sass-glob-importer');
+
 module.exports = {
   html        : true,
   images      : true,

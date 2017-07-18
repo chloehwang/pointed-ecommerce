@@ -1,0 +1,22 @@
+.hero__heading {
+  @include font-family-exodus;
+  font-size: 76px;
+}
+
+.hero__subheading {
+  @include font-family-geo-book;
+  font-size: $font-size-tiny;
+  font-weight: bold;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+}
+
+@include breakpoint('large') {
+  .hero__heading {
+    font-size: 240px;
+  }
+
+  .hero__subheading {
+    font-size: $font-size-large;
+  }
+}

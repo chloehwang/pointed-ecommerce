@@ -12,6 +12,7 @@
   "dependencies": {
     "blendid": "^4.1.1",
     "in-viewport": "^3.5.0",
+    "node-sass-glob-importer": "^3.0.2",
     "npm-check-updates": "^2.12.1"
   }
 }

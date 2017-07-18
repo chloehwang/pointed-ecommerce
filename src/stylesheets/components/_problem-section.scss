@@ -1,7 +1,7 @@
 .problem-section__subheading {
   @include font-family-exodus;
-  font-size: 24px;
+  font-size: $font-size-larger;
   font-weight: 400;
-  letter-spacing: .15em;
+  letter-spacing: $font-spacing-narrow;
   line-height: 1.6;
 }
