@@ -1,16 +1,18 @@
 // Imports
+@mixin font-face($name, $filename, $style: normal, $weight: normal) {
+  @font-face {
+    font-family: #{$name};
+    font-style: $style;
+    font-weight: $weight;
+    src: url("../fonts/#{$name}/#{$filename}.eot");
+    src: url("../fonts/#{$name}/#{$filename}.eot?#iefix") format("embedded-opentype"), url("../fonts/#{$name}/#{$filename}.woff") format("woff"), url("../fonts/#{$name}/#{$filename}.ttf") format("truetype"), url("../fonts/#{$name}/#{$filename}.svg##{$name}") format("svg");
+  }
+}
+
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');
-@font-face {
-  font-family: 'Geomanist';
-  src: url('../fonts/geomanist-regular/geomanist-regular-webfont.eot');
-  src: url('../fonts/geomanist-regular/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/geomanist-regular/geomanist-regular-webfont.woff2') format('woff2'), url('../fonts/geomanist-regular/geomanist-regular-webfont.woff') format('woff'), url('../fonts//geomanist-regular/geomanist-regular-webfont.ttf') format('truetype');
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'Geomanist Book';
-  src: url('../fonts/geomanist-book/Geomanist-Book.otf') format("opentype");
-  font-weight: 400;
-}
+@include font-face('geomanist-regular', 'geomanist-regular-webfont');
+@include font-face('geomanist-book', 'geomanist-book-webfont');
+@include font-face('exodus', 'exodusdisplay-sharpen-webfont');
 
 
 // Variables
@@ -23,15 +25,20 @@ $base-line-height : 2;
   font-family: 'Lora', 'Cambria', 'Times New Roman', 'Times', serif;
 }
 
+@mixin font-family-exodus {
+  font-family: 'exodus', 'Cambria', 'Times New Roman', 'Times', serif;
+}
+
 @mixin font-family-geo {
-  font-family: 'Geomanist', 'Arial', san-serif;
+  font-family: 'geomanist-regular', 'Arial', san-serif;
 }
 
 @mixin font-family-geo-book {
-  font-family: 'Geomanist Book', 'Arial', san-serif;
+  font-family: 'geomanist-book', 'Arial', san-serif;
 }
 
 @mixin font-smoothing {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+
