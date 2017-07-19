@@ -1,0 +1,55 @@
+.comparison-box {
+  border: 1px solid black;
+  padding: 30px;
+
+  .vs-circle-container {
+    margin: 30px 0;
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      background: black;
+      height: 1px;
+      margin: 0 auto;
+      right: 0;
+      top: 50%;
+      width: 90%;
+      z-index: -1;
+    }
+  }
+
+  .vs-circle {
+    background: black;
+    border-radius: 100px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+  }
+
+  @include breakpoint('large') {
+    align-items: stretch;
+    justify-content: space-around;
+    display: flex;
+
+    .quote {
+      max-width: 475px;
+    }
+
+    .vs-circle-container {
+      margin: 0 15px;
+      align-items: center;
+      display: flex;
+
+      &::before {
+        height: 100%;
+        width: 1px;
+        top: 0;
+      }
+    }
+
+    .vs-circle {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
