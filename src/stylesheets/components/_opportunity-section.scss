@@ -107,7 +107,8 @@
       }
     }
 
-    #opportunity2 {
+    // every other section gets reverse order of text-image in solution section
+    &:nth-child(even) {
       .solution {
         flex-direction: row;
       }
@@ -118,6 +119,8 @@
     }
   }
 }
+
+
 
 .wrapper > .opportunity__header::before {
   #opportunity1 & {
