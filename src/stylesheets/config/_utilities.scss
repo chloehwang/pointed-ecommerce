@@ -2,8 +2,8 @@
 
 // Mixins
 
-@mixin pseudo {
-  content: "";
+@mixin pseudo($content: '') {
+  content: $content;
   position: absolute;
   top: 0;
   left: 0;
@@ -20,6 +20,15 @@
   width: 1px;
 }
 
+@mixin null-margins {
+  > :first-child {
+    margin-top: 0 !important;
+  }
+
+  > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
 
 // =fill($val: 0)
 //   bottom: #{$val}

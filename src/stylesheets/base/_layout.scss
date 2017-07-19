@@ -1,0 +1,15 @@
+.wrapper {
+  @include null-margins;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 60px 30px;
+  position: relative;
+
+  @include breakpoint("large") {
+    padding: 100px;
+
+    &.-narrow {
+      padding: 100px 200px;
+    }
+  }
+}

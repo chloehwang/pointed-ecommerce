@@ -1,5 +1,6 @@
 //config
 @import "config/colors";
+@import "config/breakpoints";
 @import "config/utilities";
 @import "config/typography";
 
@@ -9,10 +10,14 @@
 
 //base
 @import "base/html";
+@import "base/layout";
 @import "base/links";
 @import "base/backgrounds";
 @import "base/typography";
 @import "base/utilities";
 
 //components
+@import "components/intro-section";
 @import "components/sticky-nav";
+@import "components/problem-section";
+@import "components/opportunity-section";
