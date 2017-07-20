@@ -14,10 +14,14 @@
 
 .opportunity {
 
-  // setting margins
+  // setting margins + layout
   .small-black-heading,
   .small-pink-heading {
     margin-top: 60px
+  }
+
+  .wrapper {
+    max-width: 1200px;
   }
 
   // header
@@ -54,9 +58,6 @@
   }
 
   .opportunity__content {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
     height: 100%;
     margin-bottom: 40px;
   }
@@ -100,6 +101,10 @@
     }
 
     .opportunity__content {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+
       h3, p {
         width: 700px;
       }
