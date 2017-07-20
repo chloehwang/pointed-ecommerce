@@ -7,9 +7,5 @@
 
   @include breakpoint("large") {
     padding: 120px 100px;
-
-    &.-narrow {
-      padding: 120px 200px;
-    }
   }
 }

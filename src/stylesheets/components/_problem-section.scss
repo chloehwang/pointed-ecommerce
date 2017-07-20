@@ -1,7 +1,37 @@
-.problem-section__subheading {
-  @include font-family-exodus;
-  font-size: $font-size-larger;
-  font-weight: 400;
-  letter-spacing: $font-spacing-narrow;
-  line-height: 1.6;
+.problem {
+  .problem__subheading {
+    @include font-family-exodus;
+    font-size: $font-size-larger;
+    font-weight: 400;
+    letter-spacing: $font-spacing-narrow;
+    line-height: 1.6;
+  }
+
+  @include breakpoint('large') {
+    .problem__subheading {
+      font-size: 50px;
+    }
+
+    .problem__content {
+      display: flex;
+
+      .problem__content__text,
+      .problem__content__points {
+        flex: 1;
+      }
+    }
+
+    // &.problem1 {
+    //   .wrapper {
+    //     padding-left: 0;
+    //     padding-right: 0;
+    //   }
+
+    // }
+  }
+
 }
+
+
+
+
