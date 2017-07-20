@@ -140,15 +140,18 @@
   {# opportunity 1 #}
   <section id="opportunity1" class="bgcolor-lightGray opportunity">
     <div class="wrapper">
-      <h2 class="opportunity__heading">
-        <span class="screen-reader">Opportunity #1: </span>
-        Comparison Shopping
-      </h2>
 
-      <div>
+      <div class="opportunity__header">
+        <h2 class="opportunity__header__text">
+          <span class="screen-reader">Opportunity #1: </span>
+          Comparison Shopping
+        </h2>
+      </div>
+
+      <div class="opportunity__content">
         <h3 class="small-black-heading">The Problem</h3>
 
-        <p><span class="opportunity__content-leadin">In physical stores, shoppers frequently shop not for individual items, but for a collection of items: an outfit, a place setting, or even the ingredients for a meal. But online, it’s difficult to browse multiple product categories simultaneously. Browsing is siloed and constrained to predefined categories, making it difficult to compare dissimilar items. Each search is independent.</span></p>
+        <p class="opportunity__content__leadin"><span>In physical stores, shoppers frequently shop not for individual items, but for a collection of items: an outfit, a place setting, or even the ingredients for a meal. But online, it’s difficult to browse multiple product categories simultaneously. Browsing is siloed and constrained to predefined categories, making it difficult to compare dissimilar items. Each search is independent.</span></p>
 
         <h3 class="small-black-heading">Why it matters</h3>
 
@@ -178,7 +181,7 @@
 
           <p>To replicate this online,  a panel could emerge suggesting you check out how that item pairs with another product category, sliding in a carousel of items. This approach avoids taking the shopper out of context, and down distracting rabbit holes. This also surfaces up a wider variety of items so there’s a greater chance of matching someone’s personal style.</p>
         </div>
-        <img class="solution__img" src="../images/placeholder.png" alt="">
+        <img class="solution__img img-responsive" src="../images/placeholder.png" alt="">
       </div>
 
 
@@ -194,45 +197,48 @@
 
           <p>Here, we add a horizontal favorites area. You can  drag and drop items in, and build multiple collections or outfits that you can tab through to review.</p>
         </div>
-        <img class="solution__img" src="../images/placeholder.png" alt="">
+        <img class="solution__img img-responsive" src="../images/placeholder.png" alt="">
       </div>
-
-
     </div>
   </section>
 
   {# opportunity 2 #}
   <section id="opportunity2" class="opportunity">
     <div class="wrapper">
-      <h2 class="opportunity__heading">
-        <span class="screen-reader">Opportunity #2: </span>
-        Discovery Delight
-      </h2>
 
-      <p><span class="opportunity__content-leadin">When we interviewed some women about what they enjoy about shopping in a store, they seemed to delight at the thought of finding something unique, a hidden gem, or even an item that they wouldn't have typically considered. The challenge here, then, is to give people that same thrill of discovery in an online setting.</span></p>
+      <div class="opportunity__header">
+        <h2 class="opportunity__header__text">
+          <span class="screen-reader">Opportunity #2: </span>
+          Discovery Delight
+        </h2>
+      </div>
 
-      <p>This is difficult to replicate online in the current search structure. There isn't really an authentic way to happen upon something without feeling heavily guided. Vignettes and featured products are curated by editors, and their hand is evident in the selections. It feels more like a suggestion than a discovery. How do you create a feeling of ownership over the exploration?</p>
+      <div class="opportunity__content">
+        <p class="opportunity__content__leadin"><span>When we interviewed some women about what they enjoy about shopping in a store, they seemed to delight at the thought of finding something unique, a hidden gem, or even an item that they wouldn't have typically considered. The challenge here, then, is to give people that same thrill of discovery in an online setting.</span></p>
 
-      <p>Lacking a tactile element, it can sometimes be difficult for customers to develop an emotional connection to the products we display online. We give them plenty of logical reasons to buy a product, like its features or reviews. But, we don't often tap into the visceral reactions people have while shopping. When people have the "thrill of discovery," they can start to build that emotional attachment to a product. Finding a way to capture that feeling in an online venue could be a powerful way to promote sales.</p>
+        <p>This is difficult to replicate online in the current search structure. There isn't really an authentic way to happen upon something without feeling heavily guided. Vignettes and featured products are curated by editors, and their hand is evident in the selections. It feels more like a suggestion than a discovery. How do you create a feeling of ownership over the exploration?</p>
+
+        <p>Lacking a tactile element, it can sometimes be difficult for customers to develop an emotional connection to the products we display online. We give them plenty of logical reasons to buy a product, like its features or reviews. But, we don't often tap into the visceral reactions people have while shopping. When people have the "thrill of discovery," they can start to build that emotional attachment to a product. Finding a way to capture that feeling in an online venue could be a powerful way to promote sales.</p>
+      </div>
 
       <hr>
 
-      <h3 class="small-black-heading text-align-center">Our idea</h3>
+      <h3 class="small-black-heading text-align-center">Our Idea</h3>
 
       <p>To give people that sense of discovery, we decided to rethink how products relate to each other. The beauty of a flea market table or a vignette in a lifestyle store, like Anthropologie, is a seemingly haphazard arrangement of items governed by some loose guides and rules. It almost sets up a quick mental game for the viewer, figure out the relationship between this and that. That type of stimulation to find both contrasts and similarities between items keeps the customer engaged and curious and occasionally surprised. So, how might we design that into an e-commerce site?</p>
 
-      <div class="solutions">
-        <div class="solution">
-          <h4>
+
+      <div class="solution">
+        <div>
+          <h4 class="solution__heading">
             <span class="small-pink-heading">Solution</span>
             <span class="screen-reader">:</span>
             <strong>A random yet curated set of items</strong>
           </h4>
 
-          <img src="" alt="">
-
           <p>Taking one over-arching category, like homegoods, we could then create a chain of queries for tags. Instead of showing items that all match the same one query, one item would proceed from the last, like a game of telephone. This would essentially generate a curated set of items at random. This could have the potential to preserve that authentic feeling of stumbling upon something, while still preserving some rules to keep the results relevant and related.</p>
         </div>
+        <img class="solution__img img-responsive" src="../images/placeholder.png" alt="">
       </div>
     </div>
   </section>
@@ -240,39 +246,43 @@
   {# opportunity 3 #}
   <section id="opportunity3" class="bgcolor-lightGray opportunity">
     <div class="wrapper">
-      <h2 class="opportunity__heading">
-        <span class="screen-reader">Opportunity #3: </span>
-        Social Validation
-      </h2>
 
-      <p><span class="opportunity__content-leadin">Some women we interviewed think of shopping as a social event. They value it as a way to build relationships with their friends and family. They seek out specific and personalized feedback from trusted advisors to guide their decision. While a second opinion is readily available in most store settings, either through a trusted friend that you bring along or the honest advice of a salesperson, it’s cumbersome to do it online.</span></p>
+      <div class="opportunity__header">
+        <h2 class="opportunity__header__text">
+          <span class="screen-reader">Opportunity #3: </span>
+          Social Validation
+        </h2>
+      </div>
 
-      <p>Making social interactions a larger part of online shopping could have a significant effect on conversions. Access to a sounding board is a useful tool for many. These opinions are often the deciding factor in helping someone make a final choice on purchases.</p>
+      <div class="opportunity__content">
+        <p class="opportunity__content__leadin"><span>Some women we interviewed think of shopping as a social event. They value it as a way to build relationships with their friends and family. They seek out specific and personalized feedback from trusted advisors to guide their decision. While a second opinion is readily available in most store settings, either through a trusted friend that you bring along or the honest advice of a salesperson, it’s cumbersome to do it online.</span></p>
 
-      <p>There is also the potential for bringing in new customers this way. These could be very good leads because their tastes and lifestyle may be similar to the person already shopping on the site. When they review an item, they may also decide to  check out the store. This is also a far more organic and authentic interaction around a real decision, instead of more straight-forward advertising and promotion tactics.</p>
+        <p>Making social interactions a larger part of online shopping could have a significant effect on conversions. Access to a sounding board is a useful tool for many. These opinions are often the deciding factor in helping someone make a final choice on purchases.</p>
+
+        <p>There is also the potential for bringing in new customers this way. These could be very good leads because their tastes and lifestyle may be similar to the person already shopping on the site. When they review an item, they may also decide to  check out the store. This is also a far more organic and authentic interaction around a real decision, instead of more straight-forward advertising and promotion tactics.</p>
+      </div>
 
       <hr>
 
-      <h3 class="small-black-heading text-align-center">Our idea</h3>
+      <h3 class="small-black-heading text-align-center">Our Idea</h3>
 
-      <p>Often, when people talk adding social elements to an e-commerce site, they mean sharing. However, sharing is somewhat one-sided and is typically directed to a large network of associations. It is useful to the shop, but not so useful to the customer. Sharing allows for someone to say "This is what I bought," not ask "Should I buy this?" While forums can add a setting for feedback, this isn't intimate or personalized feedback. It is based on the opinion of the general public, not a close friend.</p>
+      <p>Often, when people talk adding social elements to an e-commerce site, they mean sharing. However, sharing is somewhat one-sided and is typically directed to a large network of associations. It is useful to the shop, but not so useful to the customer. Sharing allows for someone to say "This is what I bought," not ask "Should I buy this?" While forums can add a setting for feedback, this isn't intimate or personalized feedback. It is based on the opinion of the general public, not a close friend. </p>
 
-      <p>We wanted to focus on how to create a setting for quieter, personal exchanges about the products someone was considering. This space should be appropriate for having more personal exchanges about the product, how it might work with your current wardrobe or furniture or even how it might fit or flatter the wearer. This type of feedback needs to come from people who know the customer and their style well.</p>
+      <p>We wanted to focus on how to create a setting for quieter, personal exchanges about the products someone was considering. This space should be appropriate for having more personal exchanges about the product, how it might work with your current wardrobe or furniture or even how it might fit or flatter the wearer. This type of feedback needs to come from people who know the customer and their style well. </p>
 
-      <div class="solutions">
-        <div class="solution">
-          <h4>
+      <div class="solution">
+        <div>
+          <h4 class="solution__heading">
             <span class="small-pink-heading">Solution</span>
             <span class="screen-reader">:</span>
             <strong>Let friends & family weigh in</strong>
           </h4>
 
-          <img src="" alt="">
-
           <p>After creating a list of items they were considering, they would be able to send an email with a link to friends to review. Those friends could then either vote up or down on each item and/or add comments. These tallies and comments would then be shared back with the customer to help them in their deliberations.</p>
 
           <p>In the future as this feature grew, it may even include the option to add a personal stylist from the store, who could give professional recommendations and advice on specific items.</p>
         </div>
+        <img class="solution__img img-responsive" src="../images/placeholder.png" alt="">
       </div>
     </div>
   </section>

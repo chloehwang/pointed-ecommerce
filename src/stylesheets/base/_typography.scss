@@ -3,6 +3,10 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   color: black;
+
+  @include breakpoint('large') {
+    line-height: 2
+  }
 }
 
 .-tiny {
