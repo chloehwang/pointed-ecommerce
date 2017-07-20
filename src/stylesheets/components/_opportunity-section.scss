@@ -2,8 +2,7 @@
 
   // setting margins
   .small-black-heading,
-  .small-pink-heading,
-  hr {
+  .small-pink-heading {
     margin-top: 60px
   }
 
@@ -38,6 +37,14 @@
     &::after {
       content: url("../images/opp1.png");
     }
+  }
+
+  .opportunity__content {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 40px;
   }
 
   // leadin text with pink underline
@@ -79,9 +86,9 @@
     }
 
     .opportunity__content {
-      float: right;
-      margin: 0 0 30px 100%;
-      width: 700px;
+      p {
+        width: 700px;
+      }
 
       .opportunity__content__leadin {
         font-size: $font-size-larger;

@@ -6,10 +6,10 @@
   position: relative;
 
   @include breakpoint("large") {
-    padding: 100px;
+    padding: 120px 100px;
 
     &.-narrow {
-      padding: 100px 200px;
+      padding: 120px 200px;
     }
   }
 }
