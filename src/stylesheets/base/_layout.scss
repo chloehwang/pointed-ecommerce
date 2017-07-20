@@ -13,3 +13,11 @@
     }
   }
 }
+
+@include breakpoint('large') {
+  .problem, .opportunity {
+    p {
+      margin-bottom: 25px;
+    }
+  }
+}

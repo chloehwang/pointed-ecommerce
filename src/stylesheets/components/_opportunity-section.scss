@@ -73,9 +73,6 @@
   }
 
   @include breakpoint('large') {
-      p {
-        margin-bottom: 25px;
-      }
 
     .opportunity__header {
       height: 480px;

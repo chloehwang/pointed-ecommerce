@@ -1,10 +1,49 @@
 .problem {
+
+  .small-pink-heading {
+    margin-bottom: 8px;
+  }
+
+  .problem__header {
+    margin-bottom: 30px;
+  }
+
   .problem__subheading {
     @include font-family-exodus;
     font-size: $font-size-larger;
     font-weight: 400;
     letter-spacing: $font-spacing-narrow;
-    line-height: 1.6;
+    line-height: 1.4;
+  }
+
+  .pull-quote {
+    @include font-smoothing;
+  }
+
+  .problem__point {
+    margin-top: 60px;
+
+    &:nth-child(1) {
+      .problem__point__img {
+        background-image: url("../images/image.png");
+      }
+    }
+
+    &:nth-child(2) {
+      .problem__point__img {
+        background-image: url("../images/image (3).png");
+      }
+    }
+  }
+
+  .problem__point__text {
+    margin-top: 20px;
+  }
+
+  .problem__point__img {
+    height: 300px;
+    background-size: cover;
+    position: relative;
   }
 
   @include breakpoint('large') {
@@ -12,26 +51,75 @@
       font-size: 50px;
     }
 
-    .problem__content {
+    .container {
       display: flex;
+    }
 
-      .problem__content__text,
-      .problem__content__points {
-        flex: 1;
+    .problem__content {
+      flex: 1;
+    }
+
+    .pull-quote {
+      font-size: 32px;
+    }
+
+    .problem__points {
+      flex: 1.1;
+      margin-left: 5%;
+    }
+
+    .problem__point {
+      display: flex;
+      position: relative;
+
+      &:nth-child(1) {
+        justify-content: flex-end;
+
+        .problem__point__img {
+          height: 448px;
+          right: -75px;
+        }
+
+        .problem__point__text {
+          left: 0;
+          top: 13px;
+        }
+      }
+
+      &:nth-child(2) {
+        .problem__point__img {
+          height: 372px;
+          top: -160px;
+        }
+
+        .problem__point__text {
+          right: -5px;
+          top: -50px;
+        }
       }
     }
 
-    // &.problem1 {
-    //   .wrapper {
-    //     padding-left: 0;
-    //     padding-right: 0;
-    //   }
+    .problem__point__img {
+      width: 390px;
+    }
 
-    // }
+    .problem__point__text {
+      position: absolute;
+    }
+
+
+
+
+    .items__text {
+      text-align: center;
+    }
   }
 
 }
 
 
-
+.items {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
