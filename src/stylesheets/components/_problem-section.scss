@@ -51,37 +51,24 @@
       font-size: 50px;
     }
 
-    .container {
-      display: flex;
-    }
-
-    .problem__content {
-      flex: 1;
-    }
-
     .pull-quote {
       font-size: 32px;
-    }
-
-    .problem__points {
-      flex: 1.1;
-      margin-left: 5%;
     }
 
     .problem__point {
       display: flex;
       position: relative;
+        justify-content: center;
 
       &:nth-child(1) {
-        justify-content: flex-end;
 
         .problem__point__img {
           height: 448px;
-          right: -75px;
+          left: 15%;
         }
 
         .problem__point__text {
-          left: 0;
+          left: 15%;
           top: 13px;
         }
       }
@@ -90,10 +77,11 @@
         .problem__point__img {
           height: 372px;
           top: -160px;
+          left: -20%;
         }
 
         .problem__point__text {
-          right: -5px;
+          left: 50%;
           top: -50px;
         }
       }
@@ -112,6 +100,47 @@
 
     .items__text {
       text-align: center;
+    }
+  }
+
+  @include breakpoint('full') {
+    .container {
+      display: flex;
+    }
+
+    .problem__content {
+      flex: 1;
+    }
+
+    .problem__points {
+      flex: 1.1;
+      margin-left: 5%;
+    }
+
+    .problem__point {
+
+      &:nth-child(1) {
+
+        .problem__point__img {
+          left: 150px;
+        }
+
+        .problem__point__text {
+          left: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        // .problem__point__img {
+        //   left: 0;
+        // }
+
+        .problem__point__text {
+              left: 350px;
+          width: 275px;
+          // right: 0;
+        }
+      }
     }
   }
 
