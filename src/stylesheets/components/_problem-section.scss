@@ -68,7 +68,7 @@
         }
 
         .problem__point__text {
-          left: 15%;
+          left: 12%;
           top: 13px;
         }
       }
@@ -118,11 +118,12 @@
     }
 
     .problem__point {
+      justify-content: flex-start;
 
       &:nth-child(1) {
 
         .problem__point__img {
-          left: 150px;
+          left: 250px;
         }
 
         .problem__point__text {
@@ -131,9 +132,9 @@
       }
 
       &:nth-child(2) {
-        // .problem__point__img {
-        //   left: 0;
-        // }
+        .problem__point__img {
+          left: 0;
+        }
 
         .problem__point__text {
               left: 350px;
