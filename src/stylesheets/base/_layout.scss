@@ -15,9 +15,14 @@
 }
 
 @include breakpoint('large') {
-  .intro, .problem, .opportunity {
-    p {
+  p {
+    .problem &,
+    .opportunity & {
       margin-bottom: 25px;
+    }
+
+    .intro & {
+      margin-bottom: 40px;
     }
   }
 }
