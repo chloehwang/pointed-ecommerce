@@ -23,16 +23,12 @@
   .problem__point {
     margin-top: 60px;
 
-    &:nth-child(1) {
-      .problem__point__img {
-        background-image: url("../images/image.png");
-      }
+    &:nth-child(1) .problem__point__img {
+      background-image: url("../images/problem-point1.png");
     }
 
-    &:nth-child(2) {
-      .problem__point__img {
-        background-image: url("../images/image (3).png");
-      }
+    &:nth-child(2) .problem__point__img {
+      background-image: url("../images/problem-point2.png");
     }
   }
 
@@ -46,6 +42,23 @@
     position: relative;
   }
 
+  .steps {
+    max-width: 800px;
+    margin: 50px auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .small-black-heading {
+      font-size: $font-size-tiny;
+    }
+  }
+
+  .steps__text {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
   @include breakpoint('large') {
     .problem__subheading {
       font-size: 50px;
@@ -57,11 +70,12 @@
 
     .problem__point {
       display: flex;
+      justify-content: center;
+      margin-top: 0px;
       position: relative;
-        justify-content: center;
+      top: 60px;
 
       &:nth-child(1) {
-
         .problem__point__img {
           height: 448px;
           left: 15%;
@@ -69,20 +83,19 @@
 
         .problem__point__text {
           left: 12%;
-          top: 13px;
         }
       }
 
       &:nth-child(2) {
         .problem__point__img {
           height: 372px;
-          top: -160px;
           left: -20%;
+          top: -100px;
         }
 
         .problem__point__text {
           left: 50%;
-          top: -50px;
+          top: 10px;
         }
       }
     }
@@ -95,11 +108,8 @@
       position: absolute;
     }
 
-
-
-
-    .items__text {
-      text-align: center;
+    .steps .small-black-heading {
+      font-size: $font-size-small;
     }
   }
 
@@ -121,7 +131,6 @@
       justify-content: flex-start;
 
       &:nth-child(1) {
-
         .problem__point__img {
           left: 250px;
         }
@@ -137,19 +146,10 @@
         }
 
         .problem__point__text {
-              left: 350px;
+          left: 350px;
           width: 275px;
-          // right: 0;
         }
       }
     }
   }
-
 }
-
-
-.items {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
