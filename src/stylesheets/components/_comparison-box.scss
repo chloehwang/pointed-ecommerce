@@ -1,5 +1,5 @@
 .comparison-box {
-  background: url("../images/box.png");
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAADCAAAAACVaiEnAAAAHElEQVR4AWP8z8DwY8cPILVjpUA44/8dFyIUGABrgglxbzUC8wAAAABJRU5ErkJggg==);
   margin: 0 auto;
   max-width: 1200px;
   padding: 15px;
@@ -13,8 +13,8 @@
     padding: 30px 35px;
 
     @include breakpoint('large') {
-      justify-content: space-between;
       display: flex;
+      justify-content: space-between;
       padding: 0;
     }
   }
@@ -31,21 +31,20 @@
   }
 
   .quote__heading {
-    font-size: 14px;
+    font-size: $font-size-tiny;
 
     @include breakpoint('large') {
-      font-size: 16px;
+      font-size: $font-size-small;
     }
   }
 
   .quote__text {
     @include font-smoothing;
-    font-size: 24px;
-    line-height: 1.6;
+    font-size: $font-size-larger;
+    line-height: 1.5;
 
     @include breakpoint('large') {
-      font-size: 30px;
-      line-height: 1.5;
+      font-size: $font-size-xlarge;
       margin-top: 10px;
     }
   }
@@ -55,8 +54,8 @@
     position: relative;
 
     &::before {
-      @include pseudo;
       @include center-element;
+      @include pseudo;
       background: black;
       height: 1px;
       top: 50%;
@@ -64,14 +63,14 @@
     }
 
     @include breakpoint('large') {
-      margin: 0 20px;
       align-items: center;
       display: flex;
+      margin: 0 20px;
 
       &::before {
         height: 100%;
-        width: 1px;
         top: 0;
+        width: 1px;
       }
     }
   }
@@ -90,9 +89,9 @@
     z-index: 1;
 
     @include breakpoint('large') {
-      width: 80px;
-      height: 80px;
       font-size: 32px;
+      height: 80px;
+      width: 80px;
     }
   }
 }
