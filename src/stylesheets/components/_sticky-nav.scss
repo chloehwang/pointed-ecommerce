@@ -3,21 +3,23 @@ $list-padding-left: 50px;
 .sticky-nav {
   color: white;
   position: sticky;
-  min-height: 118px;
   top: 0;
   z-index: 1;
 
-  @include breakpoint('large') {
-      max-height: 118px;
-    }
+  @include breakpoint('medium') {
+    display: flex;
+    align-items: center;
+    height: 118px;
+  }
 
   .container {
-    padding: 30px 30px 10px;
-    max-width: 1400px;
     margin: 0 auto;
+    max-width: $max-content-width;
+    padding: 30px 30px 10px;
+    width: 100%;
 
     @include breakpoint('medium') {
-      padding: 30px;
+      padding: 0 30px;
     }
 
     @include breakpoint('large') {
@@ -25,51 +27,55 @@ $list-padding-left: 50px;
     }
   }
 
-  ol {
+  .sticky-nav__inner {
     list-style: none;
-    padding-left: $list-padding-left;
-        width: 300px;
     margin: 0 auto;
+    padding-left: $list-padding-left;
+    width: 300px;
 
     @include breakpoint('medium') {
+      align-items: center;
       display: flex;
+      justify-content: space-between;
+      max-width: 950px;
       width: 100%;
-      max-width: 1000px;
-          justify-content: space-between;
-              align-items: center;
     }
 
     li {
-      position: relative;
       padding: 30px 0;
-      // width: 250px;
+      position: relative;
 
-       &::before {
-        @include pseudo('3');
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i})::before {
+          content: '#{$i}';
+          position: absolute;
+        }
+      }
+
+      &::before {
         @include font-family-lora;
         font-size: 60px;
         font-weight: 400;
+        left: -1 * $list-padding-left;
         line-height: 1;
         top: 15px;
-        left: -1 * $list-padding-left;
       }
 
       @include breakpoint('medium') {
-           width: 135px;
-           padding: 0;
+        padding: 0;
+        width: 135px;
 
         &::before {
           top: 0;
         }
       }
       @include breakpoint('full') {
-           width: initial;
+        width: initial;
 
         &::before {
           top: -13px;
         }
       }
-
     }
   }
 }

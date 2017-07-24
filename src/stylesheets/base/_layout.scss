@@ -1,7 +1,9 @@
+$max-content-width: 1400px;
+
 .wrapper {
   @include null-margins;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: $max-content-width;
   padding: 60px 30px;
   position: relative;
 
