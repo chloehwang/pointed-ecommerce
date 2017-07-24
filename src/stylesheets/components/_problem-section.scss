@@ -117,9 +117,9 @@
   }
 
   .steps-wrapper {
+    @include narrow-content;
     @include null-margins;
     margin: 50px auto;
-    max-width: $narrow-content;
   }
 
   .steps {

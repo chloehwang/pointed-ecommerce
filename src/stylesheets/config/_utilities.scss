@@ -36,6 +36,11 @@
   }
 }
 
+@mixin narrow-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 // =fill($val: 0)
 //   bottom: #{$val}
 //   left: #{$val}
