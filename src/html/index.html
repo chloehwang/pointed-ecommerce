@@ -29,65 +29,86 @@
     <div class="wrapper -narrow">
       <h2 class="screen-reader">Introduction</h2>
 
-      <p>Women make up the overwhelming majority of retail consumers. However, e-commerce sites are designed and built in a tech industry dominated by men. That underlying tension is becoming more apparent and problematic as more and more people shop online. E-commerce sites have largely ignored the preferences of potentially its largest audience–women.</p>
+      <p class="intro__leadin">Women make up the overwhelming majority of retail consumers. However, e-commerce sites are designed and built in a tech industry dominated by men. That underlying tension is becoming more apparent and problematic as more and more people shop online. E-commerce sites have largely ignored the preferences of potentially its largest audience–women.</p>
 
-      <p>We decided to talk with women and observe their behaviors in physical stores to uncover what is missing in the current online shopping experience.</p>
+      <p class="intro__leadin">We decided to talk with women and observe their behaviors in physical stores to uncover what is missing in the current online shopping experience.</p>
 
       <hr>
 
       <p>One thing we heard over and over again was... paragraph about what women were actually complaining about. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Some sort of overall summary of the feedback.</p>
     </div>
 
-    <div class="comparison-box text-align-center wrapper">
-      <div class="quote">
-        <h3 class="-san-serif -small -narrow-spacing -caps">Shopping in a store</h3>
-        <blockquote><p class="-xlarge">"I just like to shop. I like the event of shopping. I'm like a kid in a candy store."</p></blockquote>
-      </div>
+    <div class="comparison-box">
+      <div class="container text-align-center">
+        <div class="quote">
+          <h3 class="quote__heading -san-serif -narrow-spacing -caps">Shopping in a store</h3>
+          <blockquote><p class="quote__text">“I just like to shop. I like the event of shopping. I’m like a kid in a candy store.”</p></blockquote>
+        </div>
 
-      <div class="vs-circle-container">
-        <span class="vs-circle -color-white">v.s.</span>
-      </div>
+        <div class="circle-container">
+          <span class="circle -color-white">vs</span>
+        </div>
 
-      <div class="quote">
-        <h3 class="-san-serif -small -narrow-spacing -caps">Shopping online</h3>
-        <blockquote><p class="-xlarge">I get really frustrated online. I get tired of looking. I get tired of clicking through page after page.”</p></blockquote>
+        <div class="quote">
+          <h3 class="quote__heading -san-serif -narrow-spacing -caps">Shopping online</h3>
+          <blockquote><p class="quote__text">“I get really frustrated online. I get tired of looking. I get tired of clicking through page after page.”</p></blockquote>
+        </div>
       </div>
     </div>
+
   </section>
 
   {# problem 1 #}
-  <section class="problem1">
+  <section class="problem1 problem">
     <div class="wrapper">
-      <h2 class="text-align-center">
+      <h2 class="problem__header text-align-center">
         <span class="small-pink-heading">Problem #1:</span>
-        <strong class="problem-section__subheading">Human habits are ignored</strong>
+        <strong class="problem__subheading">Human habits are ignored</strong>
       </h2>
 
-      <p>Most e-commerce sites follow same general structure and employ the same navigation and interaction patterns. Products are found through searches or browsed by category. In this structure, there is an underlying assumption that users flow naturally in a linear way from an index page to a product details page to a cart to the checkout.</p>
+      <div class="container">
+        <div class="problem__content">
+          <p>Most e-commerce sites follow same general structure and employ the same navigation and interaction patterns. Products are found through searches or browsed by category. In this structure, there is an underlying assumption that users flow naturally in a linear way from an index page to a product details page to a cart to the checkout.</p>
 
-      <p>These patterns are great for targeted searches, but they don't accommodate many other common shopping behaviors. In fact, this process starts to feel more like running queries on a database than like shopping.  </p>
+          <p>These patterns are great for targeted searches, but they don't accommodate many other common shopping behaviors. In fact, this process starts to feel more like running queries on a database than like shopping.  </p>
 
-      <blockquote><p class="-color-darkCoral -larger"><em>Most e-commerce sites are optimized for a utilitarian march toward purchasing.</em></p></blockquote>
+          <blockquote><p class="pull-quote -color-darkCoral -larger"><em>Most e-commerce sites are optimized for a utilitarian march toward purchasing.</em></p></blockquote>
 
-      <p>Current sites feel transactional, stemming from a focus on stakeholder desires. This model largely ignores how customers might envision the experience.</p>
+          <p>Current sites feel transactional, stemming from a focus on stakeholder desires. This model largely ignores how customers might envision the experience.</p>
 
-      <p>We decided to investigate ways to design a more dynamic and engaging online shopping experience. Below are some ideas for bringing the more social and exploratory aspects of shopping to the online space.</p>
+          <p>We decided to investigate ways to design a more dynamic and engaging online shopping experience. Below are some ideas for bringing the more social and exploratory aspects of shopping to the online space.</p>
+        </div>
 
-      <h3 class="-san-serif -tiny -wide-spacing -caps">Store design:</h3>
-      <ul class="-san-serif-light">
-        <li>Presents full ensembles</li>
-        <li>Has visual hierarchy and priority</li>
-        <li>Makes multiple product categories visible</li>
-        <li>Utilizes 3 axes</li>
-      </ul>
+        <div class="problem__points">
 
-      <h3 class="-san-serif -tiny -wide-spacing -caps">E-commerce design:</h3>
-      <ul class="-san-serif-light">
-        <li>Focuses on individual items</li>
-        <li>Sticks to a grid layout</li>
-        <li>Has siloed product categories</li>
-        <li>Utilizes only 1 axis</li>
-      </ul>
+          <div class="problem__point">
+            <div class="problem__point__img"></div>
+            <div class="problem__point__text">
+              <h3 class="-san-serif -tiny -wide-spacing -caps">Store design:</h3>
+              <ul class="-san-serif-light">
+                <li>Presents full ensembles</li>
+                <li>Has visual hierarchy and priority</li>
+                <li>Makes multiple product categories visible</li>
+                <li>Utilizes 3 axes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="problem__point">
+            <div class="problem__point__img"></div>
+            <div class="problem__point__text">
+              <h3 class="-san-serif -tiny -wide-spacing -caps">E-commerce design:</h3>
+              <ul class="-san-serif-light">
+                <li>Focuses on individual items</li>
+                <li>Sticks to a grid layout</li>
+                <li>Has siloed product categories</li>
+                <li>Utilizes only 1 axis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="bgcolor-pink">
@@ -99,31 +120,34 @@
   </section>
 
   {# problem 2 #}
-  <section class="problem2">
+  <section class="problem2 problem">
     <div class="wrapper -narrow">
-      <h2 class="text-align-center">
+      <h2 class="problem__header text-align-center">
         <span class="small-pink-heading">Problem #2:</span>
-        <strong class="problem-section__subheading">The middle step is missing</strong>
+        <strong class="problem__subheading">The middle step is missing</strong>
       </h2>
 
       <p>Our conversations with women revealed that shopping is far more than a means to acquire things. It can be a fun diversion, a way to express one's personal identity or style, or even a way to build trust with close friends and family. Online shopping experiences largely ignore these use cases. In an effort to tighten the sales funnel, they encourage you to go straight from browse to buy without giving you ways to consider your purchases.</p>
 
-      <div class="items small-black-heading">
-        <figure>
-          <img src="" alt="">
-          <figcaption>Browse</figcaption>
-        </figure>
-        <figure>
-          <img src="" alt="">
-          <figcaption>Consider</figcaption>
-        </figure>
-        <figure>
-          <img src="" alt="">
-          <figcaption>Buy</figcaption>
-        </figure>
+      <div class="steps-wrapper">
+        <div class="steps">
+          <figure>
+            <img src="../images/browse.png" alt="" class="img-responsive">
+            <figcaption class="small-black-heading text-align-center">Browse</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/consider.png" alt="" class="img-responsive">
+            <figcaption class="small-black-heading text-align-center">Consider</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/buy.png" alt="" class="img-responsive">
+            <figcaption class="small-black-heading text-align-center">Buy</figcaption>
+          </figure>
+        </div>
+
+        <p class="text-align-center">By not delivering on expectations, we’re potentially missing out on a powerful consumer group. With that in mind, we focused on three areas where we could bridge the gap.</p>
       </div>
 
-      <p class="text-align-center">By not delivering on expectations, we’re potentially missing out on a powerful consumer group. With that in mind, we focused on three areas where we could bridge the gap.</p>
     </div>
   </section>
 

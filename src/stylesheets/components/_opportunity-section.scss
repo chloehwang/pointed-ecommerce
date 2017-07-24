@@ -1,9 +1,27 @@
+.wrapper > .opportunity__header::before {
+  #opportunity1 & {
+    @include pseudo('1');
+  }
+
+  #opportunity2 & {
+    @include pseudo('2');
+  }
+
+  #opportunity3 & {
+    @include pseudo('3');
+  }
+}
+
 .opportunity {
 
-  // setting margins
+  // setting margins + layout
   .small-black-heading,
   .small-pink-heading {
     margin-top: 60px
+  }
+
+  .wrapper {
+    max-width: 1200px;
   }
 
   // header
@@ -30,7 +48,7 @@
       font-size: 120px;
       font-weight: 400;
       line-height: 1;
-      top: -8px !important;
+      top: -10px !important;
     }
 
     //section image on right
@@ -40,9 +58,6 @@
   }
 
   .opportunity__content {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
     height: 100%;
     margin-bottom: 40px;
   }
@@ -58,9 +73,6 @@
   }
 
   @include breakpoint('large') {
-      p {
-        margin-bottom: 35px;
-      }
 
     .opportunity__header {
       height: 480px;
@@ -69,7 +81,7 @@
       //large number on left
       &::before {
         font-size: 200px;
-        left: 50px;
+        left: 50px !important;
       }
 
       //image on right
@@ -86,7 +98,11 @@
     }
 
     .opportunity__content {
-      p {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+
+      h3, p {
         width: 700px;
       }
 
@@ -126,22 +142,5 @@
     }
   }
 }
-
-
-
-.wrapper > .opportunity__header::before {
-  #opportunity1 & {
-    @include pseudo('1');
-  }
-
-  #opportunity2 & {
-    @include pseudo('2');
-  }
-
-  #opportunity3 & {
-    @include pseudo('3');
-  }
-}
-
 
 

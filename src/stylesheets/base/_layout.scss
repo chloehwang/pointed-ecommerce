@@ -1,7 +1,7 @@
 .wrapper {
   @include null-margins;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 60px 30px;
   position: relative;
 
@@ -10,6 +10,19 @@
 
     &.-narrow {
       padding: 120px 200px;
+    }
+  }
+}
+
+@include breakpoint('large') {
+  p {
+    .problem &,
+    .opportunity & {
+      margin-bottom: 25px;
+    }
+
+    .intro & {
+      margin-bottom: 40px;
     }
   }
 }

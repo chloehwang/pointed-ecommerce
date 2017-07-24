@@ -9,6 +9,12 @@
   left: 0;
 }
 
+@mixin center-element {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 @mixin screen-reader {
   border: none;
   clip: rect(0 0 0 0);
