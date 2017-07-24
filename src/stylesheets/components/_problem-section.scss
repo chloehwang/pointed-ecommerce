@@ -14,61 +14,36 @@
     font-weight: 400;
     letter-spacing: $font-spacing-narrow;
     line-height: 1.4;
+
+    @include breakpoint('large') {
+      font-size: 50px;
+    }
   }
 
   .pull-quote {
     @include font-smoothing;
+
+    @include breakpoint('large') {
+      font-size: 32px;
+    }
   }
 
   .problem__point {
     margin-top: 60px;
 
-    &:nth-child(1) .problem__point__img {
-      background-image: url("../images/problem-point1.png");
+    &:nth-child(1) {
+      .problem__point__img {
+        background-image: url("../images/problem-point1.png");
+      }
     }
 
-    &:nth-child(2) .problem__point__img {
-      background-image: url("../images/problem-point2.png");
-    }
-  }
-
-  .problem__point__text {
-    margin-top: 20px;
-  }
-
-  .problem__point__img {
-    height: 300px;
-    background-size: cover;
-    position: relative;
-  }
-
-  .steps {
-    max-width: 800px;
-    margin: 50px auto 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .small-black-heading {
-      font-size: $font-size-tiny;
-    }
-  }
-
-  .steps__text {
-    margin: 0 auto;
-    max-width: 800px;
-  }
-
-  @include breakpoint('large') {
-    .problem__subheading {
-      font-size: 50px;
+    &:nth-child(2) {
+      .problem__point__img {
+        background-image: url("../images/problem-point2.png");
+      }
     }
 
-    .pull-quote {
-      font-size: 32px;
-    }
-
-    .problem__point {
+    @include breakpoint('large') {
       display: flex;
       justify-content: center;
       margin-top: 0px;
@@ -100,34 +75,7 @@
       }
     }
 
-    .problem__point__img {
-      width: 390px;
-    }
-
-    .problem__point__text {
-      position: absolute;
-    }
-
-    .steps .small-black-heading {
-      font-size: $font-size-small;
-    }
-  }
-
-  @include breakpoint('full') {
-    .container {
-      display: flex;
-    }
-
-    .problem__content {
-      flex: 1;
-    }
-
-    .problem__points {
-      flex: 1.1;
-      margin-left: 5%;
-    }
-
-    .problem__point {
+    @include breakpoint('full') {
       justify-content: flex-start;
 
       &:nth-child(1) {
@@ -150,6 +98,64 @@
           width: 275px;
         }
       }
+    }
+  }
+
+  .problem__point__text {
+    margin-top: 20px;
+
+    @include breakpoint('large') {
+      position: absolute;
+    }
+  }
+
+  .problem__point__img {
+    height: 300px;
+    background-size: cover;
+    position: relative;
+
+    @include breakpoint('large') {
+      width: 390px;
+    }
+  }
+
+  .steps-wrapper {
+    @include null-margins;
+    margin: 50px auto;
+    max-width: 800px;
+  }
+
+  .steps {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .small-black-heading {
+      font-size: $font-size-tiny;
+
+      @include breakpoint('large') {
+        font-size: $font-size-small;
+      }
+    }
+  }
+
+  .container {
+    @include breakpoint('full') {
+      display: flex;
+    }
+  }
+
+  .problem__content {
+    @include breakpoint('full') {
+      flex: 1;
+    }
+  }
+
+  .problem__points {
+    @include breakpoint('full') {
+      flex: 1.1;
+      margin-left: 5%;
     }
   }
 }
