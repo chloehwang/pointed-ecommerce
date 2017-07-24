@@ -5,7 +5,12 @@ body {
   color: black;
 
   @include breakpoint('large') {
-    line-height: 2
+    line-height: 2;
+
+    .desktop-xlarge-font {
+      font-size: 32px;
+      line-height: 1.7;
+    }
   }
 }
 

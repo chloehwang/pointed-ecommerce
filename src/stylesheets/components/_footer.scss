@@ -1,0 +1,10 @@
+.conclusion__leadin {
+  max-width: $narrow-content;
+  margin: 32px auto 50px;
+}
+
+.exploration-cta {
+  @include font-family-exodus;
+  font-size: 60px;
+  line-height: 1.3;
+}

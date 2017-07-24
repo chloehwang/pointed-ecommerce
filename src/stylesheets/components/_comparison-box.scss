@@ -89,7 +89,6 @@
     z-index: 1;
 
     @include breakpoint('large') {
-      font-size: 32px;
       height: 80px;
       width: 80px;
     }
