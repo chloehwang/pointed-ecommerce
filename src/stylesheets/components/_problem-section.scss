@@ -5,7 +5,7 @@
   }
 
   .problem__header {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .problem__subheading {
@@ -147,6 +147,8 @@
   }
 
   .problem__content {
+    @include null-margins;
+
     @include breakpoint('full') {
       flex: 1;
     }
@@ -158,4 +160,23 @@
       margin-left: 5%;
     }
   }
+
+  .bgcolor-pink .wrapper {
+    @media (max-width: 989px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    p {
+      @include font-smoothing;
+
+      @include breakpoint('large') {
+        font-size: $font-size-large;
+      }
+    }
+  }
+}
+
+.problem1 .wrapper {
+  overflow-x: hidden;
 }
