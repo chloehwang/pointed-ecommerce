@@ -1,22 +1,75 @@
+$list-padding-left: 50px;
+
 .sticky-nav {
   color: white;
-  margin: 0;
-  min-height: 118px;
-  padding: 0;
   position: sticky;
+  min-height: 118px;
   top: 0;
-  width: 100%;
   z-index: 1;
 
-  ol {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
+  @include breakpoint('large') {
+      max-height: 118px;
+    }
+
+  .container {
+    padding: 30px 30px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @include breakpoint('medium') {
+      padding: 30px;
+    }
+
+    @include breakpoint('large') {
+      display: flex;
+    }
   }
 
-  @include breakpoint('large') {
-    ol {
-      flex-direction: row;
+  ol {
+    list-style: none;
+    padding-left: $list-padding-left;
+        width: 300px;
+    margin: 0 auto;
+
+    @include breakpoint('medium') {
+      display: flex;
+      width: 100%;
+      max-width: 1000px;
+          justify-content: space-between;
+              align-items: center;
+    }
+
+    li {
+      position: relative;
+      padding: 30px 0;
+      // width: 250px;
+
+       &::before {
+        @include pseudo('3');
+        @include font-family-lora;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 1;
+        top: 15px;
+        left: -1 * $list-padding-left;
+      }
+
+      @include breakpoint('medium') {
+           width: 135px;
+           padding: 0;
+
+        &::before {
+          top: 0;
+        }
+      }
+      @include breakpoint('full') {
+           width: initial;
+
+        &::before {
+          top: -13px;
+        }
+      }
+
     }
   }
 }
