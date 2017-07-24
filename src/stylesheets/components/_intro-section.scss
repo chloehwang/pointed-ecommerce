@@ -1,0 +1,21 @@
+.intro {
+  .wrapper {
+    padding-bottom: 60px;
+  }
+
+  hr {
+    content: url("../images/x.png");
+    border: none;
+    margin: 35px auto;
+
+    @include breakpoint('large') {
+      margin: 50px auto;
+    }
+  }
+
+  .intro__leadin {
+    @include breakpoint('large') {
+      font-size: $font-size-large;
+    }
+  }
+}
