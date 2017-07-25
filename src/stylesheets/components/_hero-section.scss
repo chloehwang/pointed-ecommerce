@@ -1,13 +1,9 @@
 .hero {
-  padding-top: 5px;
   position: relative;
 
-  @include breakpoint('large') {
-    padding-top: 53px;
-  }
-
-  .container {
-    background-color: blue;
+  .hero__bg {
+    background: url("../images/pink-watercolor.png");
+    background-size: cover;
     padding: 15px;
 
     @include breakpoint('large') {
@@ -15,23 +11,82 @@
     }
   }
 
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    z-index: 0;
+
+     // pixelated black
+    &::after {
+      @include pseudo-bg(url('../images/pixelated-black.png'));
+      height: 103px;
+      right: -15px;
+      top: -15px;
+      width: 177px;
+      z-index: -1;
+
+      @include breakpoint('large') {
+        height: 382px;
+        right: -100px;
+        top: -55px;
+        width: 658px;
+      }
+    }
+  }
+
   .hero__card {
     @include null-margins;
     background-color: white;
-    padding: 40px 40px 35px;
+    padding: 40px;
+    position: relative;
 
     @include breakpoint('large') {
       padding: 90px 75px 176px;
     }
 
+    // lines image
+    &::before {
+      @include pseudo-bg(url('../images/abstract-lines.png'));
+      height: 131px;
+      left: -98px;
+      top: 5px;
+      transform: rotate(11.5deg);
+      width: 131px;
+
+      @include breakpoint('large') {
+        height: 500px;
+        left: -425px;
+        top: 5px;
+        width: 500px;
+      }
+    }
+
+    // triangle image
+    &::after {
+      @include pseudo-bg(url('../images/triangle.png'));
+      height: 129px;
+      right: -90px;
+      top: 55px;
+      width: 125px;
+
+      @include breakpoint('large') {
+        bottom: -80px;
+        height: 560px;
+        right: -490px;
+        top: initial;
+        width: 541px;
+      }
+    }
+
     .hero__subheading {
       @include font-family-geo-book;
+      display: block;
       font-size: $font-size-tiny;
       font-weight: bold;
       letter-spacing: .3em;
-      text-transform: uppercase;
-      display: block;
       margin-bottom: 20px;
+      text-transform: uppercase;
 
       @include breakpoint('large') {
         font-size: $font-size-large;
@@ -41,27 +96,41 @@
 
     .hero__svg svg {
       height: 100%;
-      width: 100%;
       max-width: 918px;
+      width: 100%;
     }
   }
 
   .hero__leadin {
     @include null-margins;
-    padding: 35px 30px;
+    padding: 35px 10%;
+    position: relative;
 
     @include breakpoint('large') {
       @include center-element;
+      bottom: -100px;
       font-size: $font-size-larger;
+      line-height: 1.75;
+      padding: 70px 110px;
       position: absolute;
       width: 900px;
-      padding: 70px 110px;
-      line-height: 1.75;
-      bottom: -100px;
+    }
+
+    // mouse cursor image
+    &::after {
+      @include pseudo-bg(url('../images/pointer.png'));
+      height: 73px;
+      right: 0;
+      top: -68px;
+      width: 79px;
+
+      @include breakpoint('large') {
+        height: 249px;
+        right: -175px;
+        top: 75px;
+        width: 267px;
+      }
     }
   }
-
-
-
 }
 
