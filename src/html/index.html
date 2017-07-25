@@ -12,23 +12,26 @@
 
   {# header #}
   <header class="hero">
-    <div class="hero__card">
-      <h1>
-        <span class="hero__subheading">Improving the way we</span>
-        <span class="hero__heading">Shop Online</span>
-      </h1>
-
-      <div>
-        <p>What’s missing from the online shopping experience? Most of the actual experience, it turns out. Ecommerce is still focused on buying rather than shopping. We’re exploring ways to bridge the gap between physical and digital.</p>
+    <div class="container">
+      <div class="hero__card text-align-center">
+        <h1>
+          <span class="hero__subheading">Improving the way we</span>
+          <span class="screen-reader">Shop Online</span>
+        </h1>
+        <div class="hero__svg">{% include "icons/hero.svg" %}</div>
       </div>
     </div>
+
+    <div class="hero__leadin bgcolor-black">
+      <p class="-color-white text-align-center"><em>What’s missing from the online shopping experience? Most of the actual experience, it turns out. Ecommerce is still focused on buying rather than shopping. We’re exploring ways to bridge the gap between physical and digital.</em></p>
+    </div>
+
   </header>
 
   {# intro #}
   <section class="intro">
+    <h2 class="screen-reader">Introduction</h2>
     <div class="wrapper -narrow">
-      <h2 class="screen-reader">Introduction</h2>
-
       <p class="intro__leadin">Women make up the overwhelming majority of retail consumers. However, e-commerce sites are designed and built in a tech industry dominated by men. That underlying tension is becoming more apparent and problematic as more and more people shop online. E-commerce sites have largely ignored the preferences of potentially its largest audience — women.</p>
 
       <p class="intro__leadin">We decided to talk with women and observe their behaviors in physical stores to uncover what is missing in the current online shopping experience.</p>

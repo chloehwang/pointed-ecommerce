@@ -1,22 +1,67 @@
-.hero__heading {
-  @include font-family-exodus;
-  font-size: 76px;
-}
+.hero {
+  padding-top: 5px;
+  position: relative;
 
-.hero__subheading {
-  @include font-family-geo-book;
-  font-size: $font-size-tiny;
-  font-weight: bold;
-  letter-spacing: .3em;
-  text-transform: uppercase;
-}
-
-@include breakpoint('large') {
-  .hero__heading {
-    font-size: 240px;
+  @include breakpoint('large') {
+    padding-top: 53px;
   }
 
-  .hero__subheading {
-    font-size: $font-size-large;
+  .container {
+    background-color: blue;
+    padding: 15px;
+
+    @include breakpoint('large') {
+      padding: 100px;
+    }
   }
+
+  .hero__card {
+    @include null-margins;
+    background-color: white;
+    padding: 40px 40px 35px;
+
+    @include breakpoint('large') {
+      padding: 90px 75px 176px;
+    }
+
+    .hero__subheading {
+      @include font-family-geo-book;
+      font-size: $font-size-tiny;
+      font-weight: bold;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+
+      @include breakpoint('large') {
+        font-size: $font-size-large;
+        margin-bottom: 30px;
+      }
+    }
+
+    .hero__svg svg {
+      height: 100%;
+      width: 100%;
+      max-width: 918px;
+    }
+  }
+
+  .hero__leadin {
+    @include null-margins;
+    padding: 35px 30px;
+
+    @include breakpoint('large') {
+      @include center-element;
+      font-size: $font-size-larger;
+      position: absolute;
+      width: 900px;
+      padding: 70px 110px;
+      line-height: 1.75;
+      bottom: -100px;
+    }
+  }
+
+
+
 }
+
