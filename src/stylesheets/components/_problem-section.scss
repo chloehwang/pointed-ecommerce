@@ -158,17 +158,40 @@
     }
   }
 
-  .bgcolor-pink .wrapper {
-    @media (max-width: 989px) {
-      padding-top: 80px;
-      padding-bottom: 80px;
+  .bgcolor-pink {
+    position: relative;
+
+    svg {
+      bottom: 0;
+      fill-opacity: 0.8;
+      position: absolute;
+
+      &.diagonal-left {
+        fill: #f7d5c6;
+        height: 80%;
+        width: 70%;
+      }
+
+      &.diagonal-right {
+        fill: #f4d0c0;
+        height: 60%;
+        right: 0;
+        width: 90%;
+      }
     }
 
-    p {
-      @include font-smoothing;
+    .wrapper {
+      @media (max-width: 989px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
 
-      @include breakpoint('large') {
-        font-size: $font-size-large;
+      p {
+        @include font-smoothing;
+
+        @include breakpoint('large') {
+          font-size: $font-size-large;
+        }
       }
     }
   }
