@@ -22,10 +22,7 @@
 
   .pull-quote {
     @include font-smoothing;
-
-    @include breakpoint('large') {
-      font-size: 32px;
-    }
+    line-height: 1.6;
   }
 
   .problem__point {
@@ -120,9 +117,9 @@
   }
 
   .steps-wrapper {
+    @include narrow-content;
     @include null-margins;
     margin: 50px auto;
-    max-width: 800px;
   }
 
   .steps {

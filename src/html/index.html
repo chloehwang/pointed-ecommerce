@@ -29,7 +29,7 @@
     <div class="wrapper -narrow">
       <h2 class="screen-reader">Introduction</h2>
 
-      <p class="intro__leadin">Women make up the overwhelming majority of retail consumers. However, e-commerce sites are designed and built in a tech industry dominated by men. That underlying tension is becoming more apparent and problematic as more and more people shop online. E-commerce sites have largely ignored the preferences of potentially its largest audience–women.</p>
+      <p class="intro__leadin">Women make up the overwhelming majority of retail consumers. However, e-commerce sites are designed and built in a tech industry dominated by men. That underlying tension is becoming more apparent and problematic as more and more people shop online. E-commerce sites have largely ignored the preferences of potentially its largest audience — women.</p>
 
       <p class="intro__leadin">We decided to talk with women and observe their behaviors in physical stores to uncover what is missing in the current online shopping experience.</p>
 
@@ -46,7 +46,7 @@
         </div>
 
         <div class="circle-container">
-          <span class="circle -color-white">vs</span>
+          <span class="circle -color-white desktop-xlarge-font">vs</span>
         </div>
 
         <div class="quote">
@@ -72,7 +72,7 @@
 
           <p>These patterns are great for targeted searches, but they don't accommodate many other common shopping behaviors. In fact, this process starts to feel more like running queries on a database than like shopping.  </p>
 
-          <blockquote><p class="pull-quote -color-darkCoral -larger"><em>Most e-commerce sites are optimized for a utilitarian march toward purchasing.</em></p></blockquote>
+          <blockquote><p class="pull-quote -color-darkCoral -larger desktop-xlarge-font"><em>Most e-commerce sites are optimized for a utilitarian march toward purchasing.</em></p></blockquote>
 
           <p>Current sites feel transactional, stemming from a focus on stakeholder desires. This model largely ignores how customers might envision the experience.</p>
 
@@ -127,7 +127,7 @@
         <strong class="problem__subheading">The middle step is missing</strong>
       </h2>
 
-      <p>Our conversations with women revealed that shopping is far more than a means to acquire things. It can be a fun diversion, a way to express one's personal identity or style, or even a way to build trust with close friends and family. Online shopping experiences largely ignore these use cases. In an effort to tighten the sales funnel, they encourage you to go straight from browse to buy without giving you ways to consider your purchases.</p>
+      <p>Our conversations with women revealed that shopping is far more than a means to acquire things. It can be a fun diversion, a way to express one's personal identity or style, or even a way to build trust with close friends and family. Online shopping experiences largely ignore these use cases. In an effort to tighten the sales funnel, they encourage you to go straight from browse to buy without giving you ways to <em>consider</em> your purchases.</p>
 
       <div class="steps-wrapper">
         <div class="steps">
@@ -153,12 +153,14 @@
 
   {# sticky nav bar #}
   <nav class="sticky-nav bgcolor-black -san-serif -wide-spacing -caps" data-module="StickyNav">
-    <span class="-tiny">E-commerce opportunities:</span>
-    <ol class="-small">
-      <li><a href="#opportunity1" alt="Comparison Shopping">Comparison Shopping</a></li>
-      <li><a href="#opportunity2" alt="Discovery Delight">Discovery Delight</a></li>
-      <li><a href="#opportunity3" alt="Social Validation">Social Validation</a></li>
-    </ol>
+    <div class="container">
+      <span class="-tiny">E-commerce opportunities:</span>
+      <ol class="sticky-nav__inner -small">
+        <li><a href="#opportunity1" alt="Comparison Shopping">Comparison Shopping</a></li>
+        <li><a href="#opportunity2" alt="Discovery Delight">Discovery Delight</a></li>
+        <li><a href="#opportunity3" alt="Social Validation">Social Validation</a></li>
+      </ol>
+    </div>
   </nav>
 
   {# opportunity 1 #}
@@ -312,26 +314,31 @@
   </section>
 
   {# conclusion #}
-  <section class="conclusion bgcolor-black">
+  <section class="bgcolor-black">
     <div class="wrapper -narrow -color-white">
       <h2 class="small-black-heading text-align-center">Conclusion</h2>
 
-      <p class="-large text-align-center"><em>The key to promoting sales is to give the customer the space and environment to develop an emotional attachment to the products.</p></em>
+      <p class="conclusion__leadin desktop-xlarge-font text-align-center"><em>The key to promoting sales is to give the customer the space and environment to develop an emotional attachment to the products.</p></em>
 
       <p>Online shopping lacks the fun of real shopping because it’s focused so heavily on getting you to the checkout. Current patterns ignore the way people prefer to shop and treat every product more or less the same. Products are equally competing for the customers attention and the customer isn't guided, making the experience boring and mechanical. By adding features that bridge the gap between analog and digital, we can accommodate common shopping habits.</p>
     </div>
   </section>
 
   {# footer #}
-  <footer>
+  <footer class="footer">
     <div class="wrapper -narrow text-align-center">
-      <h2 class="small-black-heading">An exploration by Viget</h2>
+      <h2 class="footer__header small-black-heading">
+        An exploration by
+        <div class="exploration-viget-logo">
+          <a href="https://www.viget.com/" aria-label="vihget" target="_blank">{% include "icons/logo.svg" %}</a>
+        </div>
+      </h2>
 
-      <p>At Viget, we’re continually thinking about how we can help shape and improve the experiences around us and make the world a better place — whether that’s through the technology solutions we deliver to our clients or through conceptual explorations.</p>
+      <p class="footer__text">At Viget, we’re continually thinking about how we can help shape and improve the experiences around us and make the world a better place — whether that’s through the technology solutions we deliver to our clients or through conceptual explorations.</p>
 
-      <h3>Let's get to work</h3>
+      <h3 class="exploration-cta">Let’s get to work.</h3>
 
-      <button>Contact Us</button>
+      <a class="button -color-white -caps -wide-spacing" href="https://www.viget.com/contact" target="_blank">Contact Us</a>
     </div>
   </footer>
 
