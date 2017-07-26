@@ -4,7 +4,7 @@
   .hero__bg {
     background: url("../images/pink-watercolor.png");
     background-size: cover;
-    padding: 15px;
+    padding: 20px 20px 15px;
 
     @include breakpoint('large') {
       padding: 100px;
@@ -17,11 +17,11 @@
     position: relative;
     z-index: 0;
 
-     // pixelated black
+     // pixelated black image
     &::after {
       @include pseudo-bg(url('../images/pixelated-black.png'));
       height: 103px;
-      right: -15px;
+      right: -20px;
       top: -15px;
       width: 177px;
       z-index: -1;
@@ -38,7 +38,7 @@
   .hero__card {
     @include null-margins;
     background-color: white;
-    padding: 40px;
+    padding: 10%;
     position: relative;
 
     @include breakpoint('large') {
@@ -49,7 +49,7 @@
     &::before {
       @include pseudo-bg(url('../images/abstract-lines.png'));
       height: 131px;
-      left: -98px;
+      left: -100px;
       top: 5px;
       transform: rotate(11.5deg);
       width: 131px;
@@ -57,7 +57,6 @@
       @include breakpoint('large') {
         height: 500px;
         left: -425px;
-        top: 5px;
         width: 500px;
       }
     }
@@ -66,8 +65,8 @@
     &::after {
       @include pseudo-bg(url('../images/triangle.png'));
       height: 129px;
-      right: -90px;
-      top: 55px;
+      right: -95px;
+      top: 52px;
       width: 125px;
 
       @include breakpoint('large') {
@@ -85,7 +84,7 @@
       font-size: $font-size-tiny;
       font-weight: bold;
       letter-spacing: .3em;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-transform: uppercase;
 
       @include breakpoint('large') {
@@ -116,7 +115,7 @@
       width: 900px;
     }
 
-    // mouse cursor image
+    // mouse pointer image
     &::after {
       @include pseudo-bg(url('../images/pointer.png'));
       height: 73px;
@@ -127,7 +126,7 @@
       @include breakpoint('large') {
         height: 249px;
         right: -175px;
-        top: 75px;
+        top: 77px;
         width: 267px;
       }
     }
