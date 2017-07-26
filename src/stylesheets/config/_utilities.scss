@@ -9,6 +9,14 @@
   left: 0;
 }
 
+@mixin pseudo-bg($url: '') {
+  content: '';
+  background-image: $url;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+}
+
 @mixin center-element {
   left: 0;
   right: 0;

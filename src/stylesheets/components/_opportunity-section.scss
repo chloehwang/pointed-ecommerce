@@ -1,18 +1,46 @@
-.wrapper > .opportunity__header::before {
-  #opportunity1 & {
-    @include pseudo('1');
-  }
-
-  #opportunity2 & {
-    @include pseudo('2');
-  }
-
-  #opportunity3 & {
-    @include pseudo('3');
-  }
-}
-
 .opportunity {
+
+  &#opportunity1 {
+    .opportunity__header {
+
+      &::before {
+        @include pseudo('1');
+      }
+
+      &::after {
+        @include pseudo-bg(url("../images/opp1.png"));
+        height: 267px;
+      }
+    }
+  }
+
+  &#opportunity2 {
+    .opportunity__header {
+
+      &::before {
+        @include pseudo('2');
+      }
+
+      &::after {
+        @include pseudo-bg(url("../images/opp2.png"));
+        height: 302px;
+      }
+    }
+  }
+
+  &#opportunity3 {
+    .opportunity__header {
+
+      &::before {
+        @include pseudo('3');
+      }
+
+      &::after {
+        @include pseudo-bg(url("../images/opp3.png"));
+        height: 189px;
+      }
+    }
+  }
 
   // setting margins + layout
   .small-black-heading,
@@ -53,7 +81,10 @@
 
     //section image on right
     &::after {
-      content: url("../images/opp1.png");
+      display: block;
+      margin: 0 auto;
+      position: initial !important;
+      width: 302px;
     }
   }
 
@@ -74,6 +105,29 @@
 
   @include breakpoint('large') {
 
+    &#opportunity1 {
+      .opportunity__header::after {
+        width: 535px;
+        height: 474px;
+      }
+    }
+
+    &#opportunity2 {
+      .opportunity__header::after {
+        width: 528px;
+        height: 528px;
+        top: -20px;
+        z-index: -1;
+      }
+    }
+
+    &#opportunity3 {
+      .opportunity__header::after {
+        width: 730px;
+        height: 458px;
+      }
+    }
+
     .opportunity__header {
       height: 480px;
       max-width: none;
@@ -86,10 +140,8 @@
 
       //image on right
       &::after {
-        content: url("../images/opport1.png");
-        position: absolute;
+        position: absolute !important;
         right: -100px;
-        top: 0;
       }
 
       .opportunity__header__text {
@@ -142,5 +194,3 @@
     }
   }
 }
-
-
