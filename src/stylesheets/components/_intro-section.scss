@@ -1,6 +1,10 @@
 .intro {
   .wrapper {
     padding-bottom: 60px;
+
+    @include breakpoint('large') {
+      padding-top: 176px;
+    }
   }
 
   hr {
