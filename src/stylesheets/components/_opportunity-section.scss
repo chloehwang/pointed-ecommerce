@@ -170,14 +170,17 @@
       flex-direction: row-reverse;
       margin-top: 100px;
 
+      div {
+        flex: 1;
+      }
+
       .solution__heading, .small-pink-heading {
         margin-top: 0;
       }
 
-      .solution__img {
-        height: 100%;
-        margin-right: 5%;
-        width: 50%;
+      .solution__animation {
+        height: 100px;
+        //margin-right: 5%;
       }
     }
 
@@ -187,9 +190,9 @@
         flex-direction: row;
       }
 
-      .solution__img {
-        margin: 0 0 0 5%;
-      }
+      // .solution__animation {
+      //   margin: 0 0 0 5%;
+      // }
     }
   }
 }
