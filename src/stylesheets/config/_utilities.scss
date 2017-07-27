@@ -28,6 +28,14 @@
   width: $size;
 }
 
+@mixin hover-include {
+  &:focus,
+  &:hover,
+  &:active {
+    @content;
+  }
+}
+
 @mixin screen-reader {
   border: none;
   clip: rect(0 0 0 0);
