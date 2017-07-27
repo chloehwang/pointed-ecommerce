@@ -103,8 +103,8 @@ $activeLinkColor: color(slightlyDarkerPink);
         left: -1 * $list-padding-left;
         opacity: 0;
         top: -27px;
-        width: 138%;
-        transition: inherit;
+        width: 137%;
+        transition: opacity 0.2s ease-out;
       }
     }
 
@@ -117,11 +117,12 @@ $activeLinkColor: color(slightlyDarkerPink);
 
       &::after {
         top: -43px;
-        width: 121%;
+        width: 123%;
       }
     }
   }
 
+  //specify custom container as reference viewport for inViewport. If this container has a height greater than 0.5px, will cause 2 sections to be active at same time.
   .inViewportContainer {
     height: 0.5px;
     position: fixed;

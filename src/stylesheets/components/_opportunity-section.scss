@@ -114,8 +114,7 @@
 
     &#opportunity2 {
       .opportunity__header::after {
-        width: 528px;
-        height: 528px;
+        @include square(528px);
         top: -20px;
         z-index: -1;
       }

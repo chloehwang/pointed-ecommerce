@@ -18,6 +18,7 @@ export default class StickyNav {
   init() {
     this.sections.forEach(this.setInViewportHandler.bind(this));
 
+    //added watcher for section above sticky nav so we know when user has left sticky sections
     let watcherSectionAbove = inViewport(this.sectionAbove, function() {
       this.turnOffActiveLink();
       this.watchAgain(watcherSectionAbove);
@@ -33,22 +34,24 @@ export default class StickyNav {
     let link = this.getNavLink(section);
 
     let watcherNavLink = inViewport(section, { container: this.container }, function() {
-      this.setActiveSection(link, watcherNavLink)
+      if (this.currentlyActiveLink !== link) {
+        this.setActiveSection(link);
+      }
+
+      this.watchAgain(watcherNavLink);
     }.bind(this));
   }
 
-  setActiveSection(link, watcherNavLink) {
+  setActiveSection(link) {
     this.turnOffActiveLink();
     this.currentlyActiveLink = link;
     this.currentlyActiveLink.classList.add('-active');
-
-    //rewatch for entering viewport
-    this.watchAgain(watcherNavLink);
   }
 
   turnOffActiveLink() {
     if (this.currentlyActiveLink) {
       this.currentlyActiveLink.classList.remove('-active');
+      this.currentlyActiveLink = null;
     }
   }
 
@@ -56,5 +59,3 @@ export default class StickyNav {
     setTimeout(watcher.watch, 1000);
   }
 }
-
-WORK ON WHEN YOU CLICK ON LINKS, PADDING IS ADDED TO TOP
