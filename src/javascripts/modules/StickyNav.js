@@ -26,8 +26,8 @@ export default class StickyNav {
   }
 
   getNavLink(section) {
-    let id = '#' + section.getAttribute('id');
-    return this.el.querySelector(`a[href='${id}']`);
+    let id = section.getAttribute('id');
+    return this.el.querySelector(`a[data-label='${id}']`);
   }
 
   setInViewportHandler(section) {
