@@ -23,6 +23,11 @@
   margin: 0 auto;
 }
 
+@mixin square($size) {
+  height: $size;
+  width: $size;
+}
+
 @mixin screen-reader {
   border: none;
   clip: rect(0 0 0 0);

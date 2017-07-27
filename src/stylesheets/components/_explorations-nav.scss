@@ -1,6 +1,3 @@
-$darkPink: #d95745;
-$brightPink: #ed6b59;
-
 .explorations-nav *{
   @include font-family-geo-book;
   @include font-smoothing;
@@ -55,13 +52,13 @@ $brightPink: #ed6b59;
   opacity: .5
 }
 .ecommerce .explorations-nav__top {
-  background-color: $darkPink;
+  background-color: color(darkPink);
 }
 .ecommerce .explorations-nav__logo {
-  background-color: $brightPink;
+  background-color: color(brightPink);
 }
 .ecommerce .explorations-nav__bottom {
-  background-color: $brightPink;
+  background-color: color(brightPink);
 }
 .ecommerce .explorations-nav__link.-ecommerce {
   opacity: .5
@@ -117,10 +114,6 @@ body {
   margin: 0;
   overflow: visible;
   padding: 0;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
   -webkit-appearance: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -166,7 +159,7 @@ body {
 }
 @media screen and (min-width: 990px) {
   .explorations-nav {
-    background-color: rgba($darkPink, 0.3);
+    background-color: rgba(color(darkPink), 0.3);
     position: absolute;
     height: 45px !important;
   }

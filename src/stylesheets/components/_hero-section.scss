@@ -17,7 +17,7 @@
     position: relative;
     z-index: 0;
 
-     // pixelated black image
+    // pixelated black image
     &::after {
       @include pseudo-bg(url('../images/pixelated-black.png'));
       height: 103px;
@@ -48,16 +48,14 @@
     // lines image
     &::before {
       @include pseudo-bg(url('../images/abstract-lines.png'));
-      height: 131px;
+      @include square(131px);
       left: -100px;
       top: 5px;
       transform: rotate(11.5deg);
-      width: 131px;
 
       @include breakpoint('large') {
-        height: 500px;
+        @include square(500px);
         left: -425px;
-        width: 500px;
       }
     }
 
