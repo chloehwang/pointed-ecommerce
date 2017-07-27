@@ -1,4 +1,6 @@
 $list-padding-left: 50px;
+$navbar-height: 118px;
+$activeLinkColor: color(slightlyDarkerPink);
 
 .sticky-nav {
   color: white;
@@ -8,7 +10,7 @@ $list-padding-left: 50px;
   @include breakpoint('medium') {
     align-items: center;
     display: flex;
-    height: 118px;
+    height: $navbar-height;
     position: sticky;
   }
 
@@ -51,41 +53,79 @@ $list-padding-left: 50px;
       position: relative;
 
       @for $i from 1 through 3 {
-        &:nth-child(#{$i})::before {
+        &:nth-child(#{$i}) .sticky-nav__link::before {
           content: '#{$i}';
           position: absolute;
         }
       }
 
-      &::before {
-        @include font-family-lora;
-        font-size: 60px;
-        font-weight: 400;
-        left: -1 * $list-padding-left;
-        line-height: 1;
-        top: 15px;
-      }
-
       @include breakpoint('medium') {
         padding: 0;
         width: 135px;
-
-        &::before {
-          top: 0;
-        }
       }
 
       @include breakpoint('full') {
         width: initial;
-
-        &::before {
-          top: -13px;
-        }
       }
     }
   }
-}
 
-.-active {
-  color: pink;
+  .sticky-nav__link {
+    transition: 0.2s ease-out;
+
+    &::before {
+      @include font-family-lora;
+      font-size: 60px;
+      font-weight: 400;
+      left: -1 * $list-padding-left;
+      line-height: 1;
+      top: 15px;
+
+      @include breakpoint('medium') {
+        top: 0;
+      }
+    }
+
+    &:hover,
+    &.-active {
+      color: $activeLinkColor;
+    }
+
+    &.-active::after {
+      opacity: 1;
+    }
+
+    @include breakpoint('large') {
+      &::after {
+        @include pseudo('');
+        background: $activeLinkColor;
+        height: 5px;
+        left: -1 * $list-padding-left;
+        opacity: 0;
+        top: -27px;
+        width: 138%;
+        transition: inherit;
+      }
+    }
+
+    @include breakpoint('full') {
+      width: initial;
+
+      &::before {
+        top: -13px;
+      }
+
+      &::after {
+        top: -43px;
+        width: 121%;
+      }
+    }
+  }
+
+  .inViewportContainer {
+    height: 0.5px;
+    position: fixed;
+    top: $navbar-height;
+    width: 100%;
+  }
 }
