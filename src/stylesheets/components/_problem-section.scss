@@ -147,13 +147,13 @@
     @include null-margins;
 
     @include breakpoint('full') {
-      flex: 1;
+      flex: 1.1;
     }
   }
 
   .problem__points {
     @include breakpoint('full') {
-      flex: 1.1;
+      flex: 1;
       margin-left: 5%;
     }
   }
