@@ -1,6 +1,11 @@
 a {
   color: #fff;
   text-decoration: none;
+
+  cite & {
+    color: black;
+    text-decoration: underline;
+  }
 }
 
 [data-whatinput="mouse"] button:focus,
