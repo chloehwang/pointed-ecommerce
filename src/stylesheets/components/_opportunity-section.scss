@@ -56,7 +56,7 @@
   .opportunity__header {
     margin: 0 auto;
     max-width: 450px;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     text-align: center;
 
@@ -84,7 +84,7 @@
     &::after {
       display: block;
       margin: 0 auto;
-      position: initial !important;
+      position: relative !important;
       width: 302px;
     }
   }
@@ -131,7 +131,7 @@
     .opportunity__header {
       height: 480px;
       max-width: none;
-      overflow: initial;
+      overflow: visible;
 
       //large number on left
       &::before {
