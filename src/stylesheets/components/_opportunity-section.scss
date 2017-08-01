@@ -185,8 +185,8 @@
       }
 
       .solution__animation {
-        height: 100px;
-        //margin-right: 5%;
+        flex: 1.1;
+        margin-right: 3%;
       }
     }
 
@@ -196,9 +196,9 @@
         flex-direction: row;
       }
 
-      // .solution__animation {
-      //   margin: 0 0 0 5%;
-      // }
+      .solution__animation {
+        margin: 0 0 0 3%;
+      }
     }
   }
 }
