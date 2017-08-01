@@ -45,7 +45,7 @@
       justify-content: center;
       margin-top: 0px;
       position: relative;
-      top: 60px;
+      top: 75px;
 
       &:nth-child(1) {
         .problem__point__img {
@@ -159,6 +159,7 @@
   }
 
   .bgcolor-pink {
+    overflow: hidden;
     position: relative;
 
     svg {
