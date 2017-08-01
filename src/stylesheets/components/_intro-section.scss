@@ -3,17 +3,19 @@
     padding-bottom: 60px;
 
     @include breakpoint('large') {
-      padding-top: 176px;
+      padding-top: 76px;
     }
   }
 
   hr {
-    content: url("../images/x.png");
     border: none;
-    margin: 35px auto;
+    margin: 50px auto;
+    text-align: center;
 
-    @include breakpoint('large') {
-      margin: 50px auto;
+    &::after {
+      content: url("../images/x.png");
+      position: relative;
+      top: 7px;
     }
   }
 

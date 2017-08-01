@@ -37,6 +37,10 @@
   .button {
     @include font-family-geo-book;
     @include font-smoothing;
+    @include hover-include {
+      background-color: darken(color(darkCoral), 10);
+    };
+    @include transition;
     background-color: color(darkCoral);
     padding: 23px 70px;
   }

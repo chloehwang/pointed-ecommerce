@@ -15,6 +15,7 @@ $activeLinkColor: color(slightlyDarkerPink);
   }
 
   .container {
+    align-items: center;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -65,7 +66,7 @@ $activeLinkColor: color(slightlyDarkerPink);
       }
 
       @include breakpoint('full') {
-        width: initial;
+        width: auto;
       }
     }
   }
@@ -74,7 +75,7 @@ $activeLinkColor: color(slightlyDarkerPink);
     @include hover-include {
       color: $activeLinkColor;
     }
-    transition: 0.2s ease-out;
+    @include transition;
 
     &::before {
       @include font-family-lora;
@@ -100,19 +101,17 @@ $activeLinkColor: color(slightlyDarkerPink);
     @include breakpoint('large') {
       &::after {
         @include pseudo('');
+        @include transition(opacity);
         background: $activeLinkColor;
         height: 5px;
         left: -1 * $list-padding-left;
         opacity: 0;
         top: -27px;
         width: 137%;
-        transition: opacity 0.2s ease-out;
       }
     }
 
     @include breakpoint('full') {
-      width: initial;
-
       &::before {
         top: -13px;
       }
