@@ -99,6 +99,10 @@
     .hero__svg svg {
       max-width: 918px;
       width: 100%;
+
+      @include breakpoint('full') {
+        min-height: 352px;
+      }
     }
   }
 
