@@ -15,7 +15,7 @@ export default class SolutionAnimation {
   }
 
   init() {
-    inViewport(this.el, function() {
+    inViewport(this.el, {offset: -200}, function() {
       this.anim.play();
     }.bind(this))
   }
