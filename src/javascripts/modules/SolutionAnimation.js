@@ -9,13 +9,13 @@ export default class SolutionAnimation {
       renderer: 'svg',
       loop: true,
       autoplay: false,
-      path: 'data.json'
+      path: `${this.el.dataset.anim}.json`
     });
     this.init();
   }
 
   init() {
-    inViewport(this.el, {offset: -90}, function() {
+    inViewport(this.el, function() {
       this.anim.play();
     }.bind(this))
   }
