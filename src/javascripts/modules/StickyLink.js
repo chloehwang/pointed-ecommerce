@@ -14,7 +14,7 @@ export default class StickyLink {
   init() {
     this.el.addEventListener('click', function(e) {
       e.preventDefault();
-      this.turnOffCurrentlyActiveLink();
+      this.switchActiveLink();
 
       let sectionTop = this.section.offsetTop;
       let navbarHeight = this.navbar.clientHeight;
@@ -31,7 +31,7 @@ export default class StickyLink {
     }.bind(this))
   }
 
-  turnOffCurrentlyActiveLink() {
+  switchActiveLink() {
     let currentlyActiveLink = this.navbar.getElementsByClassName('-active')[0];
 
     if (currentlyActiveLink) {

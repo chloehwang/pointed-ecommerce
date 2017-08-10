@@ -90,11 +90,13 @@ $activeLinkColor: color(slightlyDarkerPink);
       }
     }
 
-    &.-active {
-      color: $activeLinkColor;
+    @include breakpoint('medium') {
+      &.-active {
+        color: $activeLinkColor;
 
-      &::after {
-        opacity: 1;
+        &::after {
+          opacity: 1;
+        }
       }
     }
 
