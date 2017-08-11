@@ -81,6 +81,7 @@
 
     @include breakpoint('full') {
       justify-content: flex-start;
+      width: 120%;
 
       &:nth-child(1) {
         .problem__point__img {
@@ -99,7 +100,6 @@
 
         .problem__point__text {
           left: 355px;
-          width: 275px;
         }
       }
     }
