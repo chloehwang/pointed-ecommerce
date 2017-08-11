@@ -72,9 +72,6 @@ $activeLinkColor: color(slightlyDarkerPink);
   }
 
   .sticky-nav__link {
-    @include hover-include {
-      color: $activeLinkColor;
-    }
     @include transition;
 
     &::before {
@@ -87,6 +84,12 @@ $activeLinkColor: color(slightlyDarkerPink);
 
       @include breakpoint('medium') {
         top: 0;
+      }
+    }
+
+    @include breakpoint('small') {
+      @include hover-include {
+        color: $activeLinkColor;
       }
     }
 
