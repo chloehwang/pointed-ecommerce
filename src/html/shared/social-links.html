@@ -1,0 +1,68 @@
+<style>
+.social_links {
+    max-height: 45px;
+    padding: 20px 20px 0;
+}
+.social_links ul {
+    -webkit-padding-start: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+}
+@media (min-width: 768px) {
+    .social_links {
+        padding: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+@media (min-width: 990px) {
+    .social_links {
+        line-height: 1.8;
+        top: -117px;
+        left: -100px;
+    }
+}
+.social_links__item {
+    display: inline-block;
+    vertical-align: top;
+}
+.social_links__item:first-child {
+    margin-top: -11px;
+    margin-right: 10px;
+}
+.social_links__item.-twitter {
+    position: relative;
+    top: -1px;
+}
+.social_links__item iframe {
+    width: 90 px!important;
+}
+</style>
+<aside class="social_links">
+  <ul>
+    <li class="social_links__item -fb">
+        <div
+          class="fb-like"
+          data-href="{{ url }}"
+          data-layout="button_count"
+          data-action="like"
+          data-show-faces="false"
+          data-share="false"
+        >
+        </div>
+    </li>
+    <li class="social_links__item -twitter">
+        <a
+          class="twitter-share-button"
+          href="https://twitter.com/share"
+          data-text="{{ title }}"
+          data-via="viget"
+          data-related="viget"
+          target="_blank"
+        >
+          Tweet
+        </a>
+    </li>
+  </ul>
+</aside>

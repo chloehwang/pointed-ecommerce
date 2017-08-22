@@ -1,3 +1,12 @@
 {
-  "hello": "Blendid!"
+  "title": "Improving the Way We Shop Online: A Viget Exploration",
+  "description": {
+  	"short":"TODO",
+  	"long": "TODO"
+  },
+  "url": "TODO",
+  "previewImage": {
+  	"small":"images/preview-small.jpg",
+  	"large":"images/preview-large.jpg"
+  }
 }
