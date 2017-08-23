@@ -14,3 +14,60 @@ a {
 [data-whatinput="touch"] a:focus {
   outline: none;
 }
+
+.social_links {
+  max-height: 45px;
+  padding: 20px 20px 0;
+
+  ul {
+    -webkit-padding-start: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+  }
+
+  @media (min-width: 768px) {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @media (min-width: 990px) {
+    line-height: 1.8;
+    top: -117px;
+    left: -100px;
+  }
+}
+
+.social_links__item {
+  display: inline-block;
+  vertical-align: top;
+  height: 20px;
+
+  span {
+    vertical-align: top !important;
+  }
+
+  &:first-child {
+    margin-right: 10px;
+  }
+}
+
+.twitter-share-button {
+  align-items: center;
+  background: #1DA1F2;
+  border-radius: 3px;
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  padding: 1px 6px 0;
+
+  svg {
+    margin-right: 4px;
+    width: 15px;
+  }
+
+  span {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+  }
+}

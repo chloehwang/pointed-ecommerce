@@ -1,44 +1,3 @@
-<style>
-.social_links {
-    max-height: 45px;
-    padding: 20px 20px 0;
-}
-.social_links ul {
-    -webkit-padding-start: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-before: 0;
-}
-@media (min-width: 768px) {
-    .social_links {
-        padding: 30px;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-}
-@media (min-width: 990px) {
-    .social_links {
-        line-height: 1.8;
-        top: -117px;
-        left: -100px;
-    }
-}
-.social_links__item {
-    display: inline-block;
-    vertical-align: top;
-}
-.social_links__item:first-child {
-    margin-top: -11px;
-    margin-right: 10px;
-}
-.social_links__item.-twitter {
-    position: relative;
-    top: -1px;
-}
-.social_links__item iframe {
-    width: 90 px!important;
-}
-</style>
 <aside class="social_links">
   <ul>
     <li class="social_links__item -fb">
@@ -53,16 +12,14 @@
         </div>
     </li>
     <li class="social_links__item -twitter">
-        <a
-          class="twitter-share-button"
-          href="https://twitter.com/share"
-          data-text="{{ title }}"
-          data-via="viget"
-          data-related="viget"
-          target="_blank"
-        >
-          Tweet
-        </a>
+      <a
+        class="twitter-share-button"
+        href="https://twitter.com/share?url=http://www.massgeneral.org/&amp;text={{title}}&amp;via=Viget"
+        target="_blank"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13" preserveAspectRatio><path fill-rule="evenodd" fill="#fff" d="M17.001 1.539a7.35 7.35 0 0 1-2.003.517A3.338 3.338 0 0 0 16.531.24a7.248 7.248 0 0 1-2.215.796A3.592 3.592 0 0 0 11.77 0C9.844 0 8.283 1.469 8.283 3.282c0 .257.03.508.09.748C5.474 3.893 2.904 2.586 1.184.601a3.111 3.111 0 0 0-.473 1.65c0 1.138.616 2.143 1.552 2.731a3.65 3.65 0 0 1-1.58-.41v.041c0 1.59 1.202 2.916 2.798 3.218a3.702 3.702 0 0 1-1.575.056c.444 1.304 1.731 2.253 3.258 2.279a7.278 7.278 0 0 1-4.332 1.405c-.282 0-.559-.015-.832-.046A10.33 10.33 0 0 0 5.347 13c6.415 0 9.924-5.001 9.924-9.338 0-.142-.004-.283-.01-.424a6.891 6.891 0 0 0 1.74-1.699"/></svg>
+      <span>Tweet</span>
+  </a>
     </li>
   </ul>
 </aside>
