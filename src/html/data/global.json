@@ -1,10 +1,10 @@
 {
   "title": "Improving the Way We Shop Online: A Viget Exploration",
   "description": {
-  	"short":"TODO",
-  	"long": "TODO"
+  	"short": "E-commerce is still focused on buying rather than shopping. This exploration attempts to bridge the gap between physical and digital.",
+  	"long": "What’s missing from the online shopping experience? Most of the experience itself, it turns out. E-commerce is still focused on buying rather than shopping. Digital agency Viget explores ways to bridge the gap between physical and digital."
   },
-  "url": "TODO",
+  "url": "https://explorations.viget.com/onlineshopping/",
   "previewImage": {
   	"small":"images/preview-small.jpg",
   	"large":"images/preview-large.jpg"
