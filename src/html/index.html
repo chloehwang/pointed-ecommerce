@@ -15,6 +15,7 @@
   {# header #}
   <header class="hero">
     <div class="hero__bg">
+
       <div class="container">
         <div class="hero__card text-align-center">
           <h1>
@@ -22,11 +23,13 @@
             <span class="screen-reader">Shop Online</span>
           </h1>
           <div class="hero__svg">{% include "icons/hero.svg" %}</div>
-
-          {% include './shared/social-links.html' %}
         </div>
       </div>
+
+      {% include './shared/social-links.html' %}
+
     </div>
+
 
     <div class="hero__leadin bgcolor-black">
       <p class="-color-white text-align-center"><em>What’s missing from the online shopping experience? Most of the experience itself, it turns out. E-commerce is still focused on buying rather than shopping. We’ve explored some ways to bridge the gap between physical and digital.</em></p>

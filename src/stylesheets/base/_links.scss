@@ -16,8 +16,15 @@ a {
 }
 
 .social_links {
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  left: 0;
   max-height: 45px;
   padding: 20px 20px 0;
+  position: absolute;
+  right: 0;
+  z-index: 101;
 
   ul {
     -webkit-padding-start: 0;
@@ -25,16 +32,11 @@ a {
     -webkit-margin-before: 0;
   }
 
-  @media (min-width: 768px) {
-    padding: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   @media (min-width: 990px) {
     line-height: 1.8;
-    top: -117px;
-    left: -100px;
+    padding: 13px 35px;
+    right: auto;
+    top: 0;
   }
 }
 

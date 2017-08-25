@@ -10,6 +10,7 @@
     background: url("../images/pink-watercolor.png");
     background-size: cover;
     padding: 20px 20px 15px;
+    position: relative;
 
     @include breakpoint('large') {
       padding: 100px;
@@ -20,7 +21,7 @@
     margin: 0 auto;
     max-width: 1200px;
     position: relative;
-    z-index: 100;
+    z-index: 1;
 
     // pixelated black image
     &::after {
@@ -43,7 +44,7 @@
   .hero__card {
     @include null-margins;
     background-color: white;
-    padding: 10%;
+    padding: 10% 10% 15%;
     position: relative;
 
     @include breakpoint('large') {
