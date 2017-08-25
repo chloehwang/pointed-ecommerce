@@ -2,17 +2,65 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description.short }}">
     <meta charset="utf-8">
-    <title>Improving the Way We Shop Online: A Viget Exploration</title>
+
+    <!--Mobile Specific Metas-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--CSS-->
     <link rel="stylesheet" href="stylesheets/app.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ title }}">
+    <meta itemprop="description" content="{{ description.long }}">
+    <meta itemprop="image" content="{{url}}{{previewImage.small}}">
+
+    <!-- Open Graph meta -->
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url }}">
+    <!-- Open graph image should be 1200 x 1200 (more info here: http://www.h3xed.com/web-and-internet/how-to-use-og-image-meta-tag-facebook-reddit) -->
+    <meta property="og:image" content="{{url}}{{previewImage.large}}">
+    <meta property="og:description" content="{{ description.short }}">
+    <meta property="og:site_name" content="Viget">
+    <meta property="fb:app_id" content="1285963764865748">
+
+    <!--icons/favicons-->
     {% include "shared/app-icons.html" %}
-    {% block head %}{% endblock %}
   </head>
   <body>
     {% block content %}{% endblock %}
     {% block javascript %}
       <script src="javascripts/app.js"></script>
+      <script>
+        //Facebook SDK
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '1285963764865748',
+            xfbml      : true,
+            version    : 'v2.10'
+          });
+          FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <!-- Google Tag Manager -->
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5V7V"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5V7V');</script>
     {% endblock %}
   </body>
 </html>
