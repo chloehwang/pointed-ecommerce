@@ -2,7 +2,7 @@
   "name": "pointed-ecommerce",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/chloehwang/pointed-ecommerce.git",
+  "repository": "https://github.com/vigetlabs/pointed-ecommerce.git",
   "author": "Chloe Hwang <c.chloeh@gmail.com>",
   "license": "MIT",
   "scripts": {
