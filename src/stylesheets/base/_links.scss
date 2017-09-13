@@ -24,7 +24,7 @@ a {
   padding: 20px 20px 0;
   position: absolute;
   right: 0;
-  z-index: 101;
+  z-index: 1;
 
   ul {
     -webkit-padding-start: 0;
@@ -37,6 +37,7 @@ a {
     padding: 13px 35px;
     right: auto;
     top: 0;
+    z-index: 101;
   }
 }
 
