@@ -1,12 +1,10 @@
-window.globalNav = class GlobalNav {
+class GlobalNav {
   constructor() {
-    this.currentSite = window.location.pathname.slice(1, -1);
-
     this.dataSource = [
       {slug: 'fantasy-football', title: 'The Future of Fantasy Football'},
       {slug: 'medicine', title: 'Improving Medication Adherence'},
       {slug: 'fridge', title: 'Refrigerator Refresh'},
-      {slug: 'homebuying', title: 'Reimagining the home buying process'},
+      {slug: 'homebuying', title: 'Reimagining the home buying process', topColor: '#522e5b', logoColor: '#a0365e', bottomColor: '#5e315b'},
       {slug: 'onlineshopping', title: 'Improving the way we shop online', topColor: '#d95745', logoColor: '#ed6b59', bottomColor: '#ed6b59'}
     ];
 
@@ -16,6 +14,7 @@ window.globalNav = class GlobalNav {
   }
 
   init() {
+    this.setCurrentSite();
     let dynamicLinks = this.generateLinkMarkup();
     let navMarkup = this.generateNavMarkup(dynamicLinks);
     let stylesheet = this.generateStylesheet();
@@ -33,16 +32,18 @@ window.globalNav = class GlobalNav {
     this.navBtn.addEventListener('click', () => this.navEl.classList.toggle('-open'));
   }
 
+  setCurrentSite() {
+    let currentSlug = 'onlineshopping'  //TODO change to window.location.pathname.slice(1, -1);
+
+    this.currentSite = this.dataSource.find(pointed => pointed.slug === currentSlug);
+    this.currentSite.className = '-current';
+    this.currentSite.slug = '#';
+  }
+
   generateLinkMarkup() {
     return this.dataSource.reduce((markup, pointed) => {
-      let className = '';
+      let className = pointed.className ? pointed.className : '';
       let href      = `https://explorations.viget.com/${pointed.slug}/`;
-
-      if (pointed.slug === this.currentSite) {
-        href = '#';
-        className = '-current';
-        this.currentSite = pointed;
-      }
 
       markup += `<li><a class="gnav-explorations-nav__link ${className}" href="${href}">${pointed.title}</a></li>`;
 
@@ -67,4 +68,4 @@ window.globalNav = class GlobalNav {
 
 
 
-new window.globalNav();
+new GlobalNav();
