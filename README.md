@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* [Node](https://nodejs.org/) (v0.10.x or greater)
+* [Node](https://nodejs.org/) (v6 or greater)
 
 We use [Blendid](https://www.npmjs.com/package/blendid) to more easily manage development and building production versions of our assets. Source assets (pre-compiled Javascript, Sass, images) are saved in `src/` directory.
 
