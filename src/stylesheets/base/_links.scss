@@ -32,12 +32,12 @@ a {
     -webkit-margin-before: 0;
   }
 
-  @media (min-width: 990px) {
+  @include breakpoint('large') {
     line-height: 1.8;
     padding: 13px 35px;
     right: auto;
     top: 0;
-    z-index: 101;
+    z-index: 1001;
   }
 }
 
