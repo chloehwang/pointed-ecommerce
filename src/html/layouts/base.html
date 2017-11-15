@@ -34,19 +34,22 @@
     {% block content %}{% endblock %}
     {% block javascript %}
 
+      <!--Inject Pointed global nav-->
       <script
         async
-        id="globalNav-script"
-        src="https://chloehwang.github.io/globalNav-script/javascripts/app.js"
+        id="pointed-global-nav"
+        src="http://code.viget.com/pointed-global-nav/javascript/bundle.js"
         data-color-base="#d95745"
         data-color-logo="#ed6b59"
         data-color-menu="#ed6b59"
         data-current-site="onlineshopping"
       ></script>
 
+      <!--Built JS-->
       <script src="javascripts/app.js"></script>
+
+      <!--Facebook SDK-->
       <script>
-        //Facebook SDK
         window.fbAsyncInit = function() {
           FB.init({
             appId      : '1285963764865748',
